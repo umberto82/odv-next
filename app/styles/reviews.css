@@ -320,3 +320,25 @@
     margin-bottom: 50px;
   }
 }
+
+@media (max-width: 400px) {
+  .review-text-wrapper {
+    padding: 0 24px 40px;
+  }
+
+  .review-quote--open {
+    left: -8px;
+  }
+
+  .review-quote--close {
+    right: -8px;
+  }
+
+  .review-content {
+    padding: 24px 12px;
+  }
+
+  .review-user-row {
+    gap: 60px;
+  }
+}
