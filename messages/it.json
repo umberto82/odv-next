@@ -1,0 +1,168 @@
+{
+  "header": {
+    "home": "Home",
+    "gallery": "Galleria",
+    "places": "Luoghi d'interesse",
+    "blog": "Blog",
+    "contacts": "Contatti",
+    "availability": "Disponibilità"
+  },
+  "heroHome": {
+    "title": "Oasi Dolce Vita",
+    "subtitle": "Casa vacanze immersa nella natura del Veneto, pensata per soggiorni di relax tra comfort e tranquillità.",
+    "cta": "Scopri di più"
+  },
+  "heroFeatures": {
+    "tv": "TV con Sky",
+    "wifi": "WiFi fibra",
+    "aircon": "Aria condizionata",
+    "surveillance": "Sorveglianza 24h"
+  },
+  "propertyStory": {
+    "territoryLabel": "Il territorio",
+    "territoryTitle": "Un angolo di paradiso tra i Colli Euganei",
+    "territoryText": "A Lozzo Atestino, nel cuore del Veneto, il tempo rallenta. Vigneti, borghi medievali e terme naturali ti accolgono in un paesaggio unico, dichiarato Parco Regionale. La nostra casa vacanze è la tua base ideale per esplorare una delle zone più affascinanti d'Italia.",
+    "experienceLabel": "Experience",
+    "experienceTitle": "Vivi la casa dall'alto",
+    "experienceText": "Un viaggio tra piscina, natura e Colli Euganei visto dal drone.",
+    "spacesLabel": "Gli spazi",
+    "spacesTitle": "Vivi la casa, dentro e fuori",
+    "cardPoolTitle": "Piscina privata",
+    "cardPoolText": "Immergiti nelle acque cristalline della nostra piscina privata, circondata dal verde dei Colli Euganei. Il posto perfetto per rilassarsi e godere del silenzio della campagna veneta.",
+    "cardTennisTitle": "Campo da tennis",
+    "cardTennisText": "Una partita al tramonto con la vista sui colli come sfondo. Il nostro campo da tennis privato è a tua completa disposizione durante tutto il soggiorno.",
+    "cardOutdoorTitle": "Spazi esterni",
+    "cardOutdoorText": "Ampi spazi all'aperto tra il porticato e il giardino, dove rilassarsi all'ombra e respirare l'aria pulita dei Colli Euganei, in un angolo autentico del Veneto.",
+    "cardIndoorTitle": "Spazi interni",
+    "cardIndoorText": "Travi in legno originali, un camino accogliente, camere curate nei minimi dettagli. Tradizione veneta al comfort moderno, per un soggiorno dove nulla è lasciato al caso.",
+    "galleryLink": "Guarda la galleria →"
+  },
+  "perfectStay": {
+    "label": "La tua vacanza",
+    "title": "Il tuo soggiorno perfetto",
+    "subtitle": "Tutto quello che ti serve per una vacanza indimenticabile nei Colli Euganei",
+    "pool": "Piscina privata",
+    "tennis": "Campo da tennis",
+    "pingpong": "Ping pong",
+    "sunbeds": "Lettini piscina",
+    "umbrellas": "Ombrelloni",
+    "view": "Vista Colli Euganei",
+    "parking": "Parcheggio privato",
+    "outdoorShower": "Doccia esterna"
+  },
+  "galleria": {
+    "title": "Galleria",
+    "breadcrumb": "Home > Galleria",
+    "filters": {
+      "all": "Tutte",
+      "pool": "Piscina",
+      "exteriors": "Esterni",
+      "interiors": "Interni"
+    },
+    "categories": {
+      "esterni": "Esterni",
+      "interni": "Interni",
+      "piscina": "Piscina"
+    },
+    "lightbox": {
+      "close": "Chiudi",
+      "prev": "Precedente",
+      "next": "Successiva"
+    },
+    "imageTitles": {
+      "1": "Piazzale principale",
+      "2": "Vista esterna casa",
+      "4": "Casa esterna",
+      "5": "Portico",
+      "6": "Portico laterale",
+      "7": "Scorcio panoramico",
+      "8": "Campo da tennis",
+      "9": "Vista Colli Euganei",
+      "10": "Camera 1",
+      "11": "Camera 2",
+      "12": "Camera 3",
+      "13": "Camera matrimoniale",
+      "14": "Bagno 2",
+      "15": "Bagnetto piano terra",
+      "16": "Camera dettaglio 2",
+      "17": "Bagno 1",
+      "18": "Camera 3 dettaglio",
+      "19": "Camera 4",
+      "20": "Cucina",
+      "21": "Cucina dettaglio",
+      "22": "Cucina angolo",
+      "23": "Cucina completa",
+      "24": "Ingresso",
+      "25": "Salotto",
+      "26": "Salotto vista 2",
+      "27": "Salotto dettaglio",
+      "28": "Soppalco",
+      "29": "Stanzetta",
+      "30": "Stanzetta 2",
+      "31": "Piscina principale",
+      "32": "Piscina",
+      "33": "Piscina vista sui colli euganei",
+      "34": "Piscina lato",
+      "35": "Piscina dettaglio",
+      "36": "Bagnetto piscina spogliatoio",
+      "37": "Piscina acqua",
+      "38": "Dettaglio legno",
+      "39": "Cucinino spogliatoio",
+      "40": "Ingresso spogliatoio"
+    }
+  },
+  "location": {
+    "label": "Dove siamo",
+    "title": "Come raggiungerci",
+    "addressTitle": "Indirizzo",
+    "mapsBtn": "Apri in Google Maps →"
+  },
+  "reviews": {
+    "label": "Recensioni",
+    "title": "Cosa dicono i nostri ospiti",
+    "countries": [
+      "Germania",
+      "Italia",
+      "Austria",
+      "Francia",
+      "Norvegia"
+    ],
+    "texts": [
+      "Ci siamo sentiti a casa fin dal primo momento. La posizione sui Colli Euganei è meravigliosa, la piscina con vista sulla valle è semplicemente straordinaria e gli interni curati nei dettagli. indimenticabile!",
+      "Una villa immersa nei Colli con una piscina stupenda, un campo da tennis attrezzato e interni arredati con grande gusto. Le nostre aspettative sono state ampiamente superate.",
+      "La casa e la proprietà sono eccezionali, progettate con grande cura e incredibilmente ben tenute. Ti senti a casa fin dal primo momento. Umberto è stato un ospite premuroso e attento. Ci siamo goduti ogni singola giornata!",
+      "Casa e giardino sublimi, ancora più bella che nelle foto. La piscina a sfioro è meravigliosa e i Colli Euganei sono stati un vero colpo di fulmine. Umberto sempre disponibile e discreto. Assolutamente consigliata!",
+      "Una settimana assolutamente incredibile all'Oasi Dolce Vita. La casa e la vista sono mozzafiato. Umberto è un host fantastico, sempre pronto ad andare oltre le aspettative. Abbiamo usato il campo da tennis ogni giorno!"
+    ]
+  },
+  "luoghi": {
+    "categories": {
+      "posti-da-visitare": "Posti da visitare",
+      "citta": "Città",
+      "cantine": "Cantine",
+      "dove-mangiare": "Dove mangiare"
+    },
+    "subcategories": {
+      "ristoranti": "Ristoranti",
+      "pizzerie": "Pizzerie",
+      "gelaterie": "Gelaterie"
+    },
+    "website": "Sito web",
+    "map": "Mappa"
+  },
+  "blog": {
+    "title": "Blog",
+    "breadcrumb": "Home > Blog",
+    "all": "Tutti",
+    "recent": "Recenti",
+    "readMore": "Leggi \u2192",
+    "backToBlog": "\u2190 Torna al blog",
+    "by": "di"
+  },
+  "footer": {
+    "tagline": "Casa vacanze di lusso a Lozzo Atestino, nel cuore dei Colli Euganei. Piscina privata, campo da tennis e panorama mozzafiato nel cuore del Veneto.",
+    "navigation": "Navigazione",
+    "rights": "Tutti i diritti riservati",
+    "designedBy": "Designed by"
+  }
+}

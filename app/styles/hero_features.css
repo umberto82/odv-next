@@ -1,0 +1,101 @@
+.hero-features {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 64px);
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  z-index: 10;
+}
+
+.feature-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  /* ← sostituisce margin-bottom sull'img */
+  padding: 16px 12px;
+  background: #e8f8f8;
+  border-radius: 12px;
+  transition: transform 0.25s ease;
+}
+
+.feature-card img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  margin-bottom: 0;
+  /* ← azzera */
+}
+
+.feature-card p {
+  font-family: var(--font-jost), serif;
+  font-size: 0.9rem !important;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 0 !important;
+  /* ← azzera margini residui */
+}
+
+.hero-features.hidden {
+  opacity: 0;
+  transform: translateX(-50%) translateY(10px);
+  pointer-events: none;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .hero-features {
+    position: absolute;
+    bottom: -104px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 32px);
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding: 14px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    z-index: 10;
+  }
+
+  .feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* ← centra orizzontalmente */
+    justify-content: center;
+    /* ← centra verticalmente */
+    text-align: center;
+    padding: 12px 10px;
+    border-radius: 10px;
+    gap: 8px;
+    /* ← sostituisce margin-bottom sull'img */
+  }
+
+  .feature-card img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 0;
+    /* ← azzera il margin, ci pensa gap */
+  }
+
+  .feature-card p {
+    font-size: 14px !important;
+    margin-bottom: 0 !important;
+  }
+}

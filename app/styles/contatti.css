@@ -1,0 +1,347 @@
+/* =========================
+   HERO SECTION
+========================= */
+
+.contatti-hero {
+  position: relative;
+  height: 30vh;
+  min-height: 350px;
+  width: 100%;
+  background-color: #4d97d6;
+  background-image: linear-gradient(to bottom,
+      #4d97d6 0%,
+      #5aabd8 15%,
+      #7fbfe3 55%,
+      #cfeef6 97%,
+      #e8f8f8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contatti-hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contatti-hero-card {
+  text-align: center;
+}
+
+.contatti-hero-card h1 {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 38px;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 0.02em;
+  margin-top: 110px;
+}
+
+.contatti-hero-card .breadcrumb-btn {
+  margin-top: 16px;
+}
+
+.breadcrumb-btn {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px 34px;
+  border-radius: 30px;
+  border: 5.5px solid #ffffff;
+  background-color: #f5a623;
+  color: #ffffff;
+  cursor: pointer;
+  letter-spacing: 0.07em;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.breadcrumb-btn:hover {
+  background-color: #e09515;
+}
+
+/* =========================
+   CONTENT SECTION
+========================= */
+
+.contatti-section {
+  padding: 80px 0 100px;
+  background-color: #f8fafc;
+}
+
+/* =========================
+   INFO CARDS
+========================= */
+
+.contatti-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  margin-bottom: 100px;
+}
+
+.contatti-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 12px;
+  background: #e8f8f8;
+  border-radius: 12px;
+  transition: transform 0.25s ease;
+}
+
+.contatti-card:hover {
+  transform: translateY(-4px);
+}
+
+.contatti-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contatti-card-icon img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+
+.contatti-card h3 {
+  font-family: var(--font-jost), serif;
+  font-size: 0.9rem !important;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 0 !important;
+  letter-spacing: 0.01em;
+}
+
+.contatti-card p {
+  font-family: var(--font-jost), serif;
+  font-size: 0.9rem !important;
+  font-weight: 200;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 0 !important;
+}
+
+.contatti-card a {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+/* =========================
+   BOTTOM SECTION
+========================= */
+
+.contatti-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.contatti-info {
+  flex: 1;
+  text-align: center;
+}
+
+.contatti-info h2 {
+  letter-spacing: 0.01em;
+  font-family: var(--font-jost), sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.contatti-info p {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #666;
+  padding-inline: 120px;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.contatti-form {
+  flex: 1;
+}
+
+.contatti-form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.contatti-form-group {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.contatti-form-group input,
+.contatti-form-group textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  background: #ffffff;
+  transition: border-color 0.2s ease;
+  outline: none;
+}
+
+.contatti-form-group input:focus,
+.contatti-form-group textarea:focus {
+  border-color: #0284c7;
+}
+
+.contatti-form-group textarea {
+  resize: vertical;
+}
+
+.contatti-submit {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px 34px;
+  border-radius: 30px;
+  border: 8px solid #ffffff;
+  background-color: #0284c7;
+  color: #ffffff;
+  cursor: pointer;
+  letter-spacing: 0.07em;
+  transition: background 0.3s ease;
+}
+
+.contatti-submit:hover {
+  background-color: #0369a1;
+}
+
+.contatti-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.contatti-feedback {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.contatti-feedback--success {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.contatti-feedback--error {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .contatti-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .contatti-bottom {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .contatti-form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .contatti-hero-card h1 {
+    font-size: 38px;
+    letter-spacing: 0.02em;
+  }
+
+  .contatti-hero {
+    min-height: 250px;
+  }
+
+  .contatti-hero-card .breadcrumb-btn {
+    margin-top: 12px;
+    font-size: 13px;
+    padding: 8px 24px;
+    border-width: 4px;
+  }
+
+  .contatti-section {
+    padding-top: 60px;
+  }
+
+  .contatti-card {
+    padding: 28px 20px;
+  }
+
+  .contatti-form {
+    padding: 24px 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contatti-hero-card h1 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.1;
+    padding: 0 10px;
+    letter-spacing: 0.02em;
+    margin-top: 0;
+  }
+
+  .contatti-hero {
+    min-height: 320px;
+  }
+
+  .contatti-hero-content {
+    padding-top: 80px;
+  }
+
+  .contatti-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .contatti-info p {
+    padding-inline: 10px;
+  }
+
+  .contatti-section .container {
+    padding-inline: 10px;
+  }
+
+  .conatti-form {
+    padding: 0px 0px 0px 0px;
+  }
+}

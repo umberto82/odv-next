@@ -1,0 +1,162 @@
+{
+  "header": {
+    "home": "Home",
+    "gallery": "Gallery",
+    "places": "Places of interest",
+    "blog": "Blog",
+    "contacts": "Contact",
+    "availability": "Availability"
+  },
+  "heroHome": {
+    "title": "Oasi Dolce Vita",
+    "subtitle": "Holiday home immersed in the nature of Veneto, designed for relaxing stays between comfort and tranquility.",
+    "cta": "Discover more"
+  },
+  "heroFeatures": {
+    "tv": "TV with Sky",
+    "wifi": "Fiber WiFi",
+    "aircon": "Air conditioning",
+    "surveillance": "24h surveillance"
+  },
+  "propertyStory": {
+    "territoryLabel": "The territory",
+    "territoryTitle": "A corner of paradise among the Euganean Hills",
+    "territoryText": "In Lozzo Atestino, in the heart of Veneto, time slows down. Vineyards, medieval villages and natural hot springs welcome you in a unique landscape, declared a Regional Park. Our holiday home is your ideal base to explore one of the most fascinating areas of Italy.",
+    "experienceLabel": "Experience",
+    "experienceTitle": "Experience the house from above",
+    "experienceText": "A journey between pool, nature and Euganean Hills seen from a drone.",
+    "spacesLabel": "The spaces",
+    "spacesTitle": "Live the house, inside and out",
+    "cardPoolTitle": "Private pool",
+    "cardPoolText": "Immerse yourself in the crystal clear waters of our private pool, surrounded by the green of the Euganean Hills. The perfect place to relax and enjoy the silence of the Veneto countryside.",
+    "cardTennisTitle": "Tennis court",
+    "cardTennisText": "A match at sunset with the view of the hills as a backdrop. Our private tennis court is at your complete disposal throughout your stay.",
+    "cardOutdoorTitle": "Outdoor spaces",
+    "cardOutdoorText": "Large outdoor spaces between the porch and the garden, where you can relax in the shade and breathe the clean air of the Euganean Hills, in an authentic corner of Veneto.",
+    "cardIndoorTitle": "Indoor spaces",
+    "cardIndoorText": "Original wooden beams, a cozy fireplace, rooms curated down to the smallest detail. Veneto tradition meets modern comfort, for a stay where nothing is left to chance.",
+    "galleryLink": "View the gallery →"
+  },
+  "perfectStay": {
+    "label": "Your holiday",
+    "title": "Your perfect stay",
+    "subtitle": "Everything you need for an unforgettable holiday in the Euganean Hills",
+    "pool": "Private pool",
+    "tennis": "Tennis court",
+    "pingpong": "Ping pong",
+    "sunbeds": "Pool sunbeds",
+    "umbrellas": "Umbrellas",
+    "view": "Euganean Hills view",
+    "parking": "Private parking",
+    "outdoorShower": "Outdoor shower"
+  },
+  "galleria": {
+    "title": "Gallery",
+    "breadcrumb": "Home > Gallery",
+    "filters": {
+      "all": "All",
+      "pool": "Pool",
+      "exteriors": "Exteriors",
+      "interiors": "Interiors"
+    },
+    "categories": {
+      "esterni": "Exteriors",
+      "interni": "Interiors",
+      "piscina": "Pool"
+    },
+    "lightbox": {
+      "close": "Close",
+      "prev": "Previous",
+      "next": "Next"
+    },
+    "imageTitles": {
+      "1": "Main courtyard",
+      "2": "House exterior view",
+      "4": "House exterior",
+      "5": "Porch",
+      "6": "Side porch",
+      "7": "Panoramic view",
+      "8": "Tennis court",
+      "9": "Euganean Hills view",
+      "10": "Room 1",
+      "11": "Room 2",
+      "12": "Room 3",
+      "13": "Master bedroom",
+      "14": "Bathroom 2",
+      "15": "Ground floor bathroom",
+      "16": "Room detail 2",
+      "17": "Bathroom 1",
+      "18": "Room 3 detail",
+      "19": "Room 4",
+      "20": "Kitchen",
+      "21": "Kitchen detail",
+      "22": "Kitchen corner",
+      "23": "Kitchen full view",
+      "24": "Entrance",
+      "25": "Living room",
+      "26": "Living room view 2",
+      "27": "Living room detail",
+      "28": "Loft",
+      "29": "Small room",
+      "30": "Small room 2",
+      "31": "Main pool",
+      "32": "Pool",
+      "33": "Pool with Euganean Hills view",
+      "34": "Pool side view",
+      "35": "Pool detail",
+      "36": "Pool changing room",
+      "37": "Pool water",
+      "38": "Wood detail",
+      "39": "Changing room kitchenette",
+      "40": "Changing room entrance"
+    }
+  },
+  "location": {
+    "label": "Where we are",
+    "title": "How to reach us",
+    "addressTitle": "Address",
+    "mapsBtn": "Open in Google Maps →"
+  },
+  "reviews": {
+    "label": "Reviews",
+    "title": "What our guests say",
+    "countries": ["Germany", "Italy", "Austria", "France", "Norway"],
+    "texts": [
+      "We felt at home from the very first moment. The location on the Euganean Hills is wonderful, the pool with valley views is simply extraordinary and the meticulously designed interiors make the stay unforgettable.",
+      "A villa immersed in the Euganean Hills with a stunning pool, a well-equipped tennis court and tastefully furnished interiors. Umberto was a caring and helpful host. Our expectations were far exceeded.",
+      "The house and property are exceptional, designed with great care and incredibly well maintained. You feel at home from the first moment. Umberto was a thoughtful and attentive host. We enjoyed every single day!",
+      "Sublime house and garden, even more beautiful than in the photos. The infinity pool is wonderful and the Euganean Hills were love at first sight. Umberto always available and discreet. Highly recommended!",
+      "An absolutely incredible week at Oasi Dolce Vita. The house and the view are breathtaking. Umberto is a fantastic host, always ready to go above and beyond. We used the tennis court every day!"
+    ]
+  },
+  "luoghi": {
+    "categories": {
+      "posti-da-visitare": "Places to visit",
+      "citta": "Cities",
+      "cantine": "Wineries",
+      "dove-mangiare": "Where to eat"
+    },
+    "subcategories": {
+      "ristoranti": "Restaurants",
+      "pizzerie": "Pizzerias",
+      "gelaterie": "Ice cream shops"
+    },
+    "website": "Website",
+    "map": "Map"
+  },
+  "blog": {
+    "title": "Blog",
+    "breadcrumb": "Home > Blog",
+    "all": "All",
+    "recent": "Recent",
+    "readMore": "Read \u2192",
+    "backToBlog": "\u2190 Back to blog",
+    "by": "by"
+  },
+  "footer": {
+    "tagline": "Luxury holiday home in Lozzo Atestino, in the heart of the Euganean Hills. Private pool, tennis court and breathtaking views in the heart of the Veneto.",
+    "navigation": "Navigation",
+    "rights": "All rights reserved",
+    "designedBy": "Designed by"
+  }
+}

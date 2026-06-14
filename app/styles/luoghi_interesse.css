@@ -1,0 +1,317 @@
+/* =========================
+   HERO SECTION
+========================= */
+
+.luoghi-hero {
+  position: relative;
+  height: 30vh;
+  min-height: 350px;
+  width: 100%;
+  background-color: #4d97d6;
+  background-image: linear-gradient(to bottom,
+      #4d97d6 0%,
+      #5aabd8 15%,
+      #7fbfe3 55%,
+      #cfeef6 97%,
+      #e8f8f8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.luoghi-hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.breadcrumb-btn {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 10px 34px;
+  border-radius: 30px;
+  border: 5.5px solid #ffffff;
+  background-color: #f5a623;
+  color: #ffffff;
+  cursor: pointer;
+  letter-spacing: 0.07em;
+  transition: background 0.3s ease;
+}
+
+.breadcrumb-btn:hover {
+  background-color: #e09515;
+}
+
+.luoghi-hero-card {
+  text-align: center;
+}
+
+.luoghi-hero-card .breadcrumb-btn {
+  margin-top: 16px;
+}
+
+.luoghi-hero-card h1 {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 38px;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 0.02em;
+  margin-top: 110px;
+}
+
+/* =========================
+   CONTENT SECTION
+========================= */
+
+.luoghi-section {
+  padding: 60px 0 100px;
+  background-color: #f8fafc;
+}
+
+/* =========================
+   FILTER BUTTONS
+========================= */
+
+.filter-btn {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+  padding: 10px 34px;
+  border-radius: 30px;
+  border: none;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  letter-spacing: 0.07em;
+}
+
+.filter-btn:hover {
+  background-color: #f1f5f9;
+  color: #3b61de;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.filter-btn.active {
+  background-color: #0284c7;
+  border: none;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+}
+
+.luoghi-filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 60px;
+}
+
+.luoghi-sub-filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+  margin-top: -40px;
+}
+
+.filter-btn--sub {
+  font-size: 13px;
+  padding: 6px 22px;
+  background-color: #f1f5f9;
+  color: #555;
+}
+
+.filter-btn--sub:hover {
+  background-color: #e2e8f0;
+  color: #0284c7;
+}
+
+.filter-btn--sub.active {
+  background-color: #0284c7;
+  color: #ffffff;
+}
+
+/* =========================
+   CARDS LIST
+========================= */
+
+.luoghi-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.luoghi-card {
+  display: flex;
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.luoghi-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.luoghi-card-img {
+  width: 260px;
+  min-height: 200px;
+  flex-shrink: 0;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.luoghi-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luoghi-card:hover .luoghi-card-img img {
+  transform: scale(1.08);
+}
+
+.luoghi-card-body {
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.luoghi-card-title {
+  letter-spacing: 0.01em;
+  font-family: var(--font-jost), sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.luoghi-card-desc {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.luoghi-card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+}
+
+.luoghi-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #0284c7;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: #f0f9ff;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.luoghi-link:hover {
+  background: #0284c7;
+  color: #ffffff;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .luoghi-hero-card h1 {
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 1.1;
+    padding: 0 10px;
+  }
+
+  .luoghi-hero {
+    min-height: 250px;
+  }
+
+  .luoghi-filters {
+    gap: 10px;
+  }
+
+  .luoghi-filters button {
+    flex: 0 0 calc(50% - 5px);
+  }
+
+  .luoghi-section {
+    padding-top: 60px;
+  }
+
+  .luoghi-section .container {
+    padding-inline: 10px;
+  }
+
+  .luoghi-card {
+    flex-direction: column;
+  }
+
+  .luoghi-card-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .luoghi-card-body {
+    padding: 18px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .luoghi-hero-card h1 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.1;
+    padding: 0 10px;
+    letter-spacing: 0.02em;
+    margin-top: 0;
+  }
+
+  .luoghi-hero {
+    min-height: 320px;
+  }
+
+  .luoghi-hero-content {
+    padding-top: 80px;
+  }
+
+  .luoghi-filters {
+    margin-bottom: 60px;
+
+  }
+
+  .luoghi-card-links {
+    gap: 10px;
+  }
+
+  .luoghi-link {
+    font-size: 0.8rem;
+    padding: 5px 12px;
+  }
+}

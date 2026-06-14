@@ -1,0 +1,233 @@
+/* =========================
+   SECTION
+========================= */
+
+.location {
+  background: #e8f8f8;
+  padding: 80px 0;
+}
+
+.location .container {
+  padding-inline: 0;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.location-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-inline: 28px;
+}
+
+.location-label {
+  display: block;
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #3b61de;
+  margin-bottom: 12px;
+}
+
+.location-header h2 {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #1a1a1a;
+}
+
+/* =========================
+   WRAPPER
+========================= */
+
+.location-wrapper {
+  display: flex;
+  gap: 0;
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   MAPPA
+========================= */
+
+.location-map {
+  flex: 1.5;
+  min-height: 420px;
+  overflow: hidden;
+}
+
+.location-map iframe {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+  border-radius: 20px;
+}
+
+/* =========================
+   INFO
+========================= */
+
+.location-info {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* =========================
+   INDIRIZZO
+========================= */
+
+.location-address {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 28px;
+  background: #e8f8f8;
+  border-radius: 12px;
+  height: 100%;
+  justify-content: center;
+}
+
+.location-address-title {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 6px;
+}
+
+.location-address-text {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  line-height: 1.7;
+}
+
+/* =========================
+   BOTTONE MAPS
+========================= */
+
+.location-btn {
+  display: inline-block;
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: #3b61de;
+  padding: 14px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+  text-align: center;
+  align-self: flex-start;
+  /* ← si restringe al contenuto */
+}
+
+.location-btn:hover {
+  background: #2a4fc4;
+}
+
+/* =========================
+   CONTATTI
+========================= */
+
+.location-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.location-contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.location-contact:hover {
+  opacity: 0.7;
+}
+
+.location-contact svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: #3b61de;
+}
+
+.location-contact:first-child svg {
+  color: #25d366;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .location-wrapper {
+    flex-direction: column;
+  }
+
+  .location {
+    padding-bottom: 0;
+  }
+
+  .location .container {
+    padding-inline: 16px 16px;
+  }
+
+  .location-map {
+    min-height: 280px;
+    width: 100%;
+  }
+
+  .location-map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
+  }
+
+  .location-info {
+    padding: 10px;
+  }
+
+  .location-header {
+    padding-inline: 16px;
+  }
+
+  .location-address {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .location-address h3,
+  .location-address p,
+  .location-address a {
+    text-align: center;
+  }
+
+  .location-btn {
+    align-self: center;
+  }
+}

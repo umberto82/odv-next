@@ -1,0 +1,382 @@
+/* =========================
+   SECTION
+========================= */
+
+.property-story {
+  background: #e8f8f8;
+  padding: 180px 0 80px;
+  overflow-x: hidden;
+}
+
+.property-story .container {
+  padding-inline: 0;
+  /* ← azzera il padding del container solo in questa sezione */
+}
+
+/* =========================
+   WRAPPER CARD (tutti i blocchi)
+========================= */
+
+.ps-card-wrapper {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 24px;
+}
+
+.ps-card-wrapper:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================
+   BLOCCHI 1 e 3 — foto + testo
+========================= */
+
+.ps-block {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 0px;
+}
+
+.ps-block--interni {
+  flex-direction: row-reverse;
+}
+
+.ps-block--video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  padding: 150px 0px 0;
+}
+
+/* VIDEO WRAPPER PIÙ CINEMATICO */
+.ps-video {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 0 0 0;
+  margin: 0 auto;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #000;
+
+  /* 🔥 fondamentale: NON lasciare spazi neri */
+  aspect-ratio: 16 / 9;
+}
+
+/* iframe DEVE riempire tutto */
+.ps-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* VIDEO TAG */
+.ps-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* OVERLAY PLAY */
+.ps-video-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.ps-video-overlay:hover {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+/* PLAY BUTTON */
+.ps-play-button {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  transform: translateY(0);
+  transition: transform 0.2s ease;
+}
+
+.ps-video-overlay:hover .ps-play-button {
+  transform: scale(1.05);
+}
+
+/* =========================
+   LABEL
+========================= */
+
+.ps-label {
+  display: block;
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #3b61de;
+  margin-bottom: 12px;
+}
+
+.ps-label--center {
+  text-align: center;
+}
+
+/* =========================
+   TESTO
+========================= */
+
+.ps-text {
+  flex: 1;
+  /* padding: 40px; */
+  /* ← aggiunge respiro solo al testo */
+}
+
+.ps-text h2 {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.ps-text p {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.ps-link {
+  display: inline-block;
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #3b61de;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s ease;
+}
+
+.ps-link:hover {
+  border-bottom: 1px solid #3b61de;
+}
+
+/* =========================
+   IMMAGINE BLOCCHI 1 e 3
+========================= */
+
+.ps-image {
+  flex: 1.2;
+}
+
+.ps-image img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+/* =========================
+   BLOCCO OUTDOOR — wrapper
+========================= */
+
+.ps-outdoor-inner {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 100px 0px 0px 0px;
+}
+
+.ps-outdoor-title {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* =========================
+   CARDS OUTDOOR
+========================= */
+
+.ps-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px;
+}
+
+.ps-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.ps-card--hovered {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+}
+
+.ps-card-image {
+  width: 100%;
+  height: 380px;
+  /* aspect-ratio: 16/9; */
+  overflow: hidden;
+}
+
+.ps-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.4s ease;
+}
+
+.ps-card--hovered .ps-card-image img {
+  transform: scale(1.05);
+}
+
+.ps-card-body {
+  flex: 1;
+  padding: 20px;
+  background: #e8f8f8;
+}
+
+.ps-card-body h3 {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+  letter-spacing: 0.01em;
+}
+
+.ps-card-body p {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.ps-card-link {
+  display: inline-block;
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #3b61de;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.3s ease, transform 0.3s ease, border-bottom 0.2s ease;
+}
+
+.ps-card--hovered .ps-card-link {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ps-card-link:hover {
+  border-bottom: 1px solid #3b61de;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .property-story {
+    padding: 180px 0 0px;
+  }
+
+  .ps-card-wrapper {
+    width: calc(100% - 32px);
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+  }
+
+  .ps-block {
+    display: block;
+    /* ← toglie il flex completamente */
+    padding: 0;
+  }
+
+  .ps-block--interni {
+    flex-direction: column;
+  }
+
+  .ps-image img {
+    height: 240px;
+  }
+
+  .ps-outdoor-inner {
+    padding: 100px 0 0;
+  }
+
+  .ps-outdoor-title {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+  }
+
+  .ps-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .ps-card-image {
+    height: 240px;
+  }
+
+  .ps-card-link {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .ps-text {
+    padding: 50px 0 0;
+  }
+
+  .ps-label {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .ps-text h2 {
+    text-align: center;
+  }
+
+  .ps-text p {
+    text-align: center;
+  }
+}

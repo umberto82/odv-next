@@ -1,0 +1,322 @@
+/* =========================
+   SECTION
+========================= */
+
+.reviews {
+  background: #e8f8f8;
+  padding: 60px 10px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.reviews-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.reviews-label {
+  display: block;
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #3b61de;
+  margin-bottom: 12px;
+}
+
+.reviews-header h2 {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #1a1a1a;
+}
+
+/* =========================
+   CAROSELLO
+========================= */
+
+.reviews-carousel {
+  padding-inline: 0;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* =========================
+   FRECCE
+========================= */
+
+.reviews-arrow {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: #3b61de;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.reviews-arrow:hover {
+  background: #2a4fc4;
+}
+
+.reviews-arrow--mobile {
+  display: none;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.review-card {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 48px 60px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.review-user-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================
+   AVATAR
+========================= */
+
+.review-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #3b61de;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 0 auto 16px;
+}
+
+.review-avatar span {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* =========================
+   NOME E PAESE
+========================= */
+
+.review-name {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+  letter-spacing: 0.01em;
+}
+
+.review-country {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 16px;
+}
+
+/* =========================
+   STELLE
+========================= */
+
+.review-stars {
+  font-size: 1.2rem;
+  color: #f5a623;
+  margin-bottom: 24px;
+  letter-spacing: 3px;
+}
+
+/* =========================
+   TESTO E VIRGOLETTE
+========================= */
+
+.review-text-wrapper {
+  position: relative;
+  padding: 0 64px 40px;
+}
+
+.review-text {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+}
+
+.review-quote {
+  font-family: Georgia, serif;
+  font-size: 5rem;
+  color: #f5a623;
+  line-height: 0;
+  position: absolute;
+  opacity: 0.8;
+}
+
+.review-quote--open {
+  top: 8px;
+  left: 4px;
+  animation: quoteFadeDown 0.4s ease forwards;
+}
+
+.review-quote--close {
+  bottom: -8px;
+  right: 4px;
+  animation: quoteFadeUp 0.4s ease forwards;
+}
+
+@keyframes quoteFadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-24px);
+  }
+
+  to {
+    opacity: 0.8;
+    transform: translateY(0);
+  }
+}
+
+@keyframes quoteFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 0.8;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   DOT NAVIGATION
+========================= */
+
+.reviews-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 40px;
+}
+
+.reviews-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d0d0d0;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.reviews-dot.active {
+  background: #3b61de;
+  transform: scale(1.3);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .reviews {
+    padding-top: 100px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .reviews-carousel {
+    position: relative;
+    gap: 0;
+    /* padding: 0 20px; */
+  }
+
+  .reviews-arrow--desktop {
+    display: none;
+  }
+
+  .reviews-arrow--mobile {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+    position: static;
+  }
+
+  .review-card {
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+    height: auto;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-user-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 112px;
+    margin-bottom: 12px;
+    width: 100%;
+  }
+
+  .review-avatar {
+    width: 64px;
+    height: 64px;
+    margin: 0;
+  }
+
+  .review-avatar span {
+    font-size: 1.3rem;
+  }
+
+  .review-name {
+    margin-bottom: 2px;
+  }
+
+  .review-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 32px 16px;
+    height: 500px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    width: 100%;
+  }
+
+  .review-text-wrapper {
+    padding: 0 56px 40px;
+  }
+
+  .review-stars {
+    margin-bottom: 50px;
+  }
+}

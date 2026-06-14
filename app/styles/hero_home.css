@@ -1,0 +1,121 @@
+/* =========================
+   HERO WRAPPER
+========================= */
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: visible;
+  /* 🔥 FONDAMENTALE */
+  background-image: url("/imgs/home/hero-home/oasi-dolce-vita-piscina.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  pointer-events: auto;
+  /* 🔥 NON DISABILITARE TUTTO */
+}
+
+/* =========================
+   OVERLAY
+========================= */
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.45));
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-glass-card h1 {
+  letter-spacing: 0.02em !important;
+  font-weight: 500 !important;
+}
+
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.hero-content {
+  padding: 0 10px;
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+/* =========================
+   GLASS CARD EFFECT
+========================= */
+
+
+
+@media (min-width: 768px) {
+  .hero-glass-card {
+    padding: 50px 60px;
+  }
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+.hero h1 {
+  font-family: var(--font-jost), sans-serif;
+  font-weight: 600;
+  font-size: 78px;
+  max-width: 900px;
+  margin-bottom: 20px;
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.hero p {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 20px;
+  max-width: 700px;
+  opacity: 0.9;
+  margin-bottom: 30px;
+  text-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.hero-btn {
+  background-color: #3b61de;
+  color: white;
+
+  padding: 12px 24px;
+  border-radius: 30px;
+
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: #2f4fc0;
+}
+
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 54px;
+    font-weight: 500;
+    line-height: 1.15;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+}

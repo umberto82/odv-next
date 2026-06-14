@@ -1,0 +1,138 @@
+/* =========================
+   SECTION BACKGROUND
+========================= */
+
+.intro-section {
+  background: #e8f8f8;
+  padding: 200px 0 80px;
+  overflow-x: hidden;
+}
+
+/* =========================
+   CARD PRINCIPALE
+========================= */
+
+.intro-card {
+  background: #ffffff;
+  border-radius: 20px;
+
+  padding: 80px 60px;
+
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   ROW LAYOUT
+========================= */
+
+.intro-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 60px;
+
+  margin-bottom: 100px;
+}
+
+.intro-row:last-child {
+  margin-bottom: 0;
+}
+
+/* reverse */
+.intro-row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* =========================
+   TEXT AREA
+========================= */
+
+.intro-text {
+  flex: 1;
+}
+
+.intro-text h2 {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+
+  margin-bottom: 16px;
+
+  color: #1a1a1a;
+}
+
+.intro-text p {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+
+  color: #444;
+  opacity: 0.9;
+
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+/* link */
+.intro-text a {
+  display: inline-block;
+
+  font-family: var(--font-jost), sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  color: #3b61de;
+  text-decoration: none;
+
+  border-bottom: 1px solid transparent;
+  transition: 0.2s ease;
+}
+
+.intro-text a:hover {
+  border-bottom: 1px solid #3b61de;
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.intro-image {
+  flex: 1;
+}
+
+.intro-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  border-radius: 16px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  
+ .intro-card {
+   width: calc(100% - 32px);
+   margin-left: 16px;
+   margin-right: 16px;
+  padding: 30px 26px;
+    /* ← riduci qui */
+  }
+
+  .intro-row,
+  .intro-row.reverse {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .intro-image img {
+    height: auto;
+  }
+}
