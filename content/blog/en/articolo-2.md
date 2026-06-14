@@ -1,7 +1,7 @@
 ---
 title: Why Choose to Visit the Euganean Hills
 date: 2026-06-12
-author: Slurm
+author: Oasi Dolce Vita
 image: /imgs/blog/colli-euganei-view.jpg
 excerpt: Discover why the Euganean Hills are one of the most fascinating destinations in Veneto.
 slug: perche-visitare-colli-euganei

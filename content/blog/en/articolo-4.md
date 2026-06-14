@@ -1,7 +1,7 @@
 ---
 title: "Holidays in Veneto: Nature and Relaxation for Families"
 date: 2026-06-12
-author: Slurm
+author: Oasi Dolce Vita
 image: /imgs/blog/vigneti-colli-euganei.jpg
 excerpt: Discover Veneto among nature, sea, mountains, and family activities.
 slug: vacanze-veneto-natura-relax-famiglie

@@ -1,7 +1,7 @@
 ---
 title: Perché scegliere di visitare i Colli Euganei
 date: 2026-06-12
-author: Slurm
+author: Oasi Dolce Vita
 image: /imgs/blog/colli-euganei-view.jpg
 excerpt: Scopri perché i Colli Euganei sono una delle mete più affascinanti del Veneto.
 slug: perche-visitare-colli-euganei

@@ -1,7 +1,7 @@
 ---
 title: "Choose Your Next Adventure in Italy!"
 date: 2026-06-12
-author: Umberto Furlan
+author: Oasi Dolce Vita
 image: /imgs/blog/oasi-dolce-vita-piscina.jpg
 excerpt: Ideas and inspiration to discover the best destinations in Italy.
 slug: scegli-prossima-avventura-italia

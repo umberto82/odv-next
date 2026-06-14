@@ -1,7 +1,7 @@
 ---
 title: "Vacanze in Veneto: natura e relax per famiglie"
 date: 2026-06-12
-author: Slurm
+author: Oasi Dolce Vita
 image: /imgs/blog/vigneti-colli-euganei.jpg
 excerpt: Scopri il Veneto tra natura, mare, montagna e attività per famiglie.
 slug: vacanze-veneto-natura-relax-famiglie
