@@ -153,6 +153,30 @@
     "backToBlog": "\u2190 Back to blog",
     "by": "by"
   },
+  "contatti": {
+    "title": "Contact",
+    "breadcrumb": "Home > Contact",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "addressValue": "Lozzo Atestino (Padova)",
+    "heading": "Oasi Dolce Vita awaits you",
+    "description": "Are you ready to live an unforgettable experience among the Euganean Hills? Contact us to book your stay or to receive more information about our property. We will get back to you as soon as possible.",
+    "formName": "Your name",
+    "formEmail": "Your email",
+    "formMessage": "Your message",
+    "success": "Message sent successfully! We will reply shortly.",
+    "error": "Error sending message. Please try again later.",
+    "submit": "Send message",
+    "submitting": "Sending..."
+  },
+  "disponibilita": {
+    "title": "Availability",
+    "breadcrumb": "Home > Availability",
+    "label": "Calendar",
+    "heading": "Check availability",
+    "description": "Highlighted dates are already booked. All others are free."
+  },
   "footer": {
     "tagline": "Luxury holiday home in Lozzo Atestino, in the heart of the Euganean Hills. Private pool, tennis court and breathtaking views in the heart of the Veneto.",
     "navigation": "Navigation",

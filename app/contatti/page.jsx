@@ -1,11 +1,13 @@
 'use client'
 
 import { useState } from 'react';
+import { useTranslation } from '@/context/LanguageContext';
 import '../styles/contatti.css';
 
 export default function ContattiPage() {
+  const { t } = useTranslation();
   const [form, setForm] = useState({ name: '', email: '', message: '' });
-  const [status, setStatus] = useState('idle'); // idle | loading | success | error
+  const [status, setStatus] = useState('idle');
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -36,8 +38,8 @@ export default function ContattiPage() {
       <section className="contatti-hero">
         <div className="container contatti-hero-content">
           <div className="contatti-hero-card">
-            <h1>Contatti</h1>
-            <a href="/" className="breadcrumb-btn">Home &gt; Contatti</a>
+            <h1>{t('contatti.title')}</h1>
+            <a href="/" className="breadcrumb-btn">{t('contatti.breadcrumb')}</a>
           </div>
         </div>
       </section>
@@ -47,36 +49,31 @@ export default function ContattiPage() {
           <div className="contatti-cards">
             <div className="contatti-card">
               <div className="contatti-card-icon">
-                <img src="/imgs/contact/oasi-dolce-vita-indirizzo.png" alt="Indirizzo" />
+                <img src="/imgs/contact/oasi-dolce-vita-indirizzo.png" alt={t('contatti.address')} />
               </div>
-              <h3>Indirizzo</h3>
-              <p>Lozzo Atestino (Padova)</p>
+              <h3>{t('contatti.address')}</h3>
+              <p>{t('contatti.addressValue')}</p>
             </div>
             <div className="contatti-card">
               <div className="contatti-card-icon">
-                <img src="/imgs/contact/oasi-dolce-vita-telefono.png" alt="Telefono" />
+                <img src="/imgs/contact/oasi-dolce-vita-telefono.png" alt={t('contatti.phone')} />
               </div>
-              <h3>Telefono</h3>
+              <h3>{t('contatti.phone')}</h3>
               <p><a href="tel:+393760051382">+39 376 005 1382</a></p>
             </div>
             <div className="contatti-card">
               <div className="contatti-card-icon">
-                <img src="/imgs/contact/oasi-dolce-vita-email.png" alt="Email" />
+                <img src="/imgs/contact/oasi-dolce-vita-email.png" alt={t('contatti.email')} />
               </div>
-              <h3>Email</h3>
+              <h3>{t('contatti.email')}</h3>
               <p><a href="mailto:info@oasidolcevita.com">info@oasidolcevita.com</a></p>
             </div>
           </div>
 
           <div className="contatti-bottom">
             <div className="contatti-info">
-              <h2>Oasi Dolce Vita ti aspetta</h2>
-              <p>
-                Sei pronto a vivere un'esperienza indimenticabile tra i Colli Euganei?
-                Contattaci per prenotare il tuo soggiorno o per ricevere maggiori
-                informazioni sulla nostra struttura. Ti risponderemo nel più breve
-                tempo possibile.
-              </p>
+              <h2>{t('contatti.heading')}</h2>
+              <p>{t('contatti.description')}</p>
             </div>
 
             <form className="contatti-form" onSubmit={handleSubmit}>
@@ -88,7 +85,7 @@ export default function ContattiPage() {
                     value={form.name}
                     onChange={handleChange}
                     required
-                    placeholder="Il tuo nome"
+                    placeholder={t('contatti.formName')}
                   />
                 </div>
                 <div className="contatti-form-group">
@@ -98,7 +95,7 @@ export default function ContattiPage() {
                     value={form.email}
                     onChange={handleChange}
                     required
-                    placeholder="La tua email"
+                    placeholder={t('contatti.formEmail')}
                   />
                 </div>
               </div>
@@ -108,14 +105,14 @@ export default function ContattiPage() {
                   value={form.message}
                   onChange={handleChange}
                   required
-                  placeholder="Il tuo messaggio"
+                  placeholder={t('contatti.formMessage')}
                   rows="6"
                 />
               </div>
-              {status === 'success' && <p className="contatti-feedback contatti-feedback--success">Messaggio inviato con successo! Ti risponderemo al più presto.</p>}
-              {status === 'error' && <p className="contatti-feedback contatti-feedback--error">Errore nell'invio. Riprova più tardi.</p>}
+              {status === 'success' && <p className="contatti-feedback contatti-feedback--success">{t('contatti.success')}</p>}
+              {status === 'error' && <p className="contatti-feedback contatti-feedback--error">{t('contatti.error')}</p>}
               <button type="submit" className="contatti-submit" disabled={status === 'loading'}>
-                {status === 'loading' ? 'Invio in corso...' : 'Invia messaggio'}
+                {status === 'loading' ? t('contatti.submitting') : t('contatti.submit')}
               </button>
             </form>
           </div>

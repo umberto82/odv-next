@@ -1,13 +1,25 @@
-import '../styles/disponibilita.css'
+import { cookies } from 'next/headers';
+import '../styles/disponibilita.css';
 
-export default function DisponibilitaPage() {
+import itMessages from '@/messages/it.json';
+import enMessages from '@/messages/en.json';
+
+function getMessages(locale) {
+  return locale === 'en' ? enMessages : itMessages;
+}
+
+export default async function DisponibilitaPage() {
+  const cookieStore = await cookies();
+  const locale = cookieStore.get('locale')?.value || 'it';
+  const msg = getMessages(locale).disponibilita;
+
   return (
     <main>
       <section className="disp-hero">
         <div className="container disp-hero-content">
           <div className="disp-hero-card">
-            <h1>Disponibilità</h1>
-            <a href="/" className="breadcrumb-btn">Home &gt; Disponibilità</a>
+            <h1>{msg.title}</h1>
+            <a href="/" className="breadcrumb-btn">{msg.breadcrumb}</a>
           </div>
         </div>
       </section>
@@ -15,9 +27,9 @@ export default function DisponibilitaPage() {
       <section className="disp-section">
         <div className="container">
           <div className="disp-header">
-            <span className="disp-label">Calendario</span>
-            <h2>Verifica la disponibilità</h2>
-            <p>Le date evidenziate sono già prenotate. Tutte le altre sono libere.</p>
+            <span className="disp-label">{msg.label}</span>
+            <h2>{msg.heading}</h2>
+            <p>{msg.description}</p>
           </div>
 
           <div className="disp-calendar-wrapper">

@@ -159,6 +159,30 @@
     "backToBlog": "\u2190 Torna al blog",
     "by": "di"
   },
+  "contatti": {
+    "title": "Contatti",
+    "breadcrumb": "Home > Contatti",
+    "address": "Indirizzo",
+    "phone": "Telefono",
+    "email": "Email",
+    "addressValue": "Lozzo Atestino (Padova)",
+    "heading": "Oasi Dolce Vita ti aspetta",
+    "description": "Sei pronto a vivere un'esperienza indimenticabile tra i Colli Euganei? Contattaci per prenotare il tuo soggiorno o per ricevere maggiori informazioni sulla nostra struttura. Ti risponderemo nel più breve tempo possibile.",
+    "formName": "Il tuo nome",
+    "formEmail": "La tua email",
+    "formMessage": "Il tuo messaggio",
+    "success": "Messaggio inviato con successo! Ti risponderemo al più presto.",
+    "error": "Errore nell'invio. Riprova più tardi.",
+    "submit": "Invia messaggio",
+    "submitting": "Invio in corso..."
+  },
+  "disponibilita": {
+    "title": "Disponibilità",
+    "breadcrumb": "Home > Disponibilità",
+    "label": "Calendario",
+    "heading": "Verifica la disponibilità",
+    "description": "Le date evidenziate sono già prenotate. Tutte le altre sono libere."
+  },
   "footer": {
     "tagline": "Casa vacanze di lusso a Lozzo Atestino, nel cuore dei Colli Euganei. Piscina privata, campo da tennis e panorama mozzafiato nel cuore del Veneto.",
     "navigation": "Navigazione",
