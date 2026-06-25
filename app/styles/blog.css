@@ -227,16 +227,11 @@
 
 .blog-post-img {
   position: relative;
-  width: 50%;
-  max-width: 500px;
-  min-height: 300px;
-  padding: 0 40px 40px;
+  width: calc(100% - 80px);
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  margin: 40px auto;
   overflow: hidden;
-}
-
-.blog-post-img img {
-  width: 100%;
-  height: auto;
   border-radius: 12px;
 }
 
@@ -388,7 +383,8 @@
   }
 
   .blog-post-img {
-    padding: 0 20px 10px;
+    margin: 24px auto;
+    width: calc(100% - 40px);
   }
 
   .blog-post-body {
@@ -467,9 +463,8 @@
   }
 
   .blog-post-img {
-    width: 100%;
-    padding: 0px 20px 10px 10px;
-    margin-bottom: 20px;
+    width: calc(100% - 40px);
+    margin: 24px auto;
   }
 
   .blog-post-body {

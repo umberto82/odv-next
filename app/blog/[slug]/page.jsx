@@ -105,7 +105,7 @@ export default async function BlogPostPage({ params }) {
               </div>
             </div>
             <div className="blog-post-img">
-              <Image src={post.image} alt={post.title} fill sizes="(max-width: 768px) 100vw, 500px" />
+              <Image src={post.image} alt={post.title} fill sizes="(max-width: 768px) 100vw, 800px" style={{ objectFit: 'cover' }} />
             </div>
             <div
               className="blog-post-body"
