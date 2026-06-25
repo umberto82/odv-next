@@ -15,11 +15,8 @@
 }
 
 /* LOGO */
-.logo {
-  line-height: 0;
-}
-
 .logo img {
+  height: 70px;
   filter: brightness(0) invert(1);
 }
 

@@ -32,8 +32,8 @@ export default function Header() {
             <Image
               src="/imgs/home/header/oasi-dolce-vita-logo.png"
               alt="Oasi Dolce Vita"
-              width={70}
-              height={70}
+              width={50}
+              height={50}
             />
           </a>
         </div>
@@ -94,8 +94,8 @@ export default function Header() {
             <Image
               src="/imgs/home/header/oasi-dolce-vita-logo.png"
               alt="Oasi Dolce Vita"
-              width={70}
-              height={70}
+              width={50}
+              height={50}
             />
           </a>
         </div>
