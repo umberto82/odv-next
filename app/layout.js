@@ -12,24 +12,24 @@ const jost = Jost({
 
 export const metadata = {
   title: {
-    default: "Oasi Dolce Vita — Casa vacanze nei Colli Euganei",
+    default: "Oasi Dolce Vita — Villa con piscina privata e campo da tennis sui Colli Euganei | Lozzo Atestino",
     template: "%s | Oasi Dolce Vita",
   },
   description:
-    "Casa vacanze di lusso a Lozzo Atestino sui Colli Euganei con piscina privata, campo da tennis e WiFi. A mezzora da Venezia, Verona e Vicenza, 2 ore dalle Dolomiti. Ideale per relax e family holiday in Veneto.",
+    "Affitta Oasi Dolce Vita, villa con piscina privata, campo da tennis e WiFi a Lozzo Atestino sui Colli Euganei. Ideale per vacanza relax, famiglia e smart working in Veneto. A 30 minuti da Venezia, Verona e Vicenza, 2 ore dalle Dolomiti. Prenota ora il tuo soggiorno.",
   openGraph: {
-    title: "Oasi Dolce Vita — Casa vacanze nei Colli Euganei",
+    title: "Oasi Dolce Vita — Villa con piscina privata sui Colli Euganei",
     description:
-      "Casa vacanze di lusso a Lozzo Atestino sui Colli Euganei con piscina privata, campo da tennis e WiFi. A mezzora da Venezia, Verona e Vicenza, 2 ore dalle Dolomiti.",
+      "Affitta villa con piscina privata, campo da tennis e WiFi a Lozzo Atestino sui Colli Euganei. Ideale per relax e famiglia. A 30 min da Venezia, Verona e Vicenza.",
     locale: "it_IT",
     siteName: "Oasi Dolce Vita",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Oasi Dolce Vita — Casa vacanze nei Colli Euganei",
+    title: "Oasi Dolce Vita — Villa con piscina privata Colli Euganei",
     description:
-      "Casa vacanze di lusso sui Colli Euganei con piscina privata, campo da tennis e WiFi. A mezzora da Venezia e Verona.",
+      "Affitta villa con piscina privata, campo da tennis e WiFi sui Colli Euganei. A 30 min da Venezia e Verona.",
   },
   robots: {
     index: true,

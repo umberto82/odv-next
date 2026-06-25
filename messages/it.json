@@ -9,7 +9,7 @@
   },
   "heroHome": {
     "title": "Oasi Dolce Vita",
-    "subtitle": "Casa vacanze immersa nella natura del Veneto, pensata per soggiorni di relax tra comfort e tranquillità.",
+    "subtitle": "Affitta villa con piscina privata e campo da tennis sui Colli Euganei. Relax, natura e comfort per la tua vacanza a Lozzo Atestino.",
     "cta": "Scopri di più"
   },
   "heroFeatures": {
@@ -20,27 +20,27 @@
   },
   "propertyStory": {
     "territoryLabel": "Il territorio",
-    "territoryTitle": "Un angolo di paradiso tra i Colli Euganei",
-    "territoryText": "A Lozzo Atestino, nel cuore del Veneto, il tempo rallenta. Vigneti, borghi medievali e terme naturali ti accolgono in un paesaggio unico, dichiarato Parco Regionale. La nostra casa vacanze è la tua base ideale per esplorare una delle zone più affascinanti d'Italia.",
+    "territoryTitle": "Un angolo di paradiso a Lozzo Atestino, sui Colli Euganei",
+    "territoryText": "La nostra casa vacanze a Lozzo Atestino, nel cuore del Veneto, è il punto di partenza ideale per esplorare vigneti, borghi medievali e terme naturali dei Colli Euganei, dichiarati Parco Regionale. Goditi il relax della piscina privata e del campo da tennis tra un'escursione e l'altra.",
     "experienceLabel": "Experience",
     "experienceTitle": "Vivi la casa dall'alto",
     "experienceText": "Un viaggio tra piscina, natura e Colli Euganei visto dal drone.",
     "spacesLabel": "Gli spazi",
     "spacesTitle": "Vivi la casa, dentro e fuori",
     "cardPoolTitle": "Piscina privata",
-    "cardPoolText": "Immergiti nelle acque cristalline della nostra piscina privata, circondata dal verde dei Colli Euganei. Il posto perfetto per rilassarsi e godere del silenzio della campagna veneta.",
+    "cardPoolText": "Immergiti nelle acque cristalline della nostra piscina privata sui Colli Euganei. Il posto perfetto per rilassarsi e godere del silenzio della campagna veneta, dopo una giornata alla scoperta di Lozzo Atestino e dintorni.",
     "cardTennisTitle": "Campo da tennis",
-    "cardTennisText": "Una partita al tramonto con la vista sui colli come sfondo. Il nostro campo da tennis privato è a tua completa disposizione durante tutto il soggiorno.",
+    "cardTennisText": "Una partita al tramonto con la vista sui Colli Euganei come sfondo. Il nostro campo da tennis privato è a tua disposizione per tutto il soggiorno. Un'esperienza unica nella tua villa vacanze in Veneto.",
     "cardOutdoorTitle": "Spazi esterni",
-    "cardOutdoorText": "Ampi spazi all'aperto tra il porticato e il giardino, dove rilassarsi all'ombra e respirare l'aria pulita dei Colli Euganei, in un angolo autentico del Veneto.",
+    "cardOutdoorText": "Ampi spazi all'aperto tra porticato e giardino con vista Colli Euganei, dove rilassarsi all'ombra e respirare l'aria pulita. Il luogo ideale per una vacanza relax in Veneto con famiglia o amici.",
     "cardIndoorTitle": "Spazi interni",
     "cardIndoorText": "Travi in legno originali, un camino accogliente, camere curate nei minimi dettagli. Tradizione veneta al comfort moderno, per un soggiorno dove nulla è lasciato al caso.",
     "galleryLink": "Guarda la galleria →"
   },
   "perfectStay": {
     "label": "La tua vacanza",
-    "title": "Il tuo soggiorno perfetto",
-    "subtitle": "Tutto quello che ti serve per una vacanza indimenticabile nei Colli Euganei",
+    "title": "Il tuo soggiorno perfetto sui Colli Euganei",
+    "subtitle": "Tutto quello che ti serve per una vacanza indimenticabile: piscina privata, campo da tennis, WiFi e vista mozzafiato sui Colli Euganei. La tua villa a Lozzo Atestino ti aspetta.",
     "pool": "Piscina privata",
     "tennis": "Campo da tennis",
     "pingpong": "Ping pong",
@@ -167,7 +167,7 @@
     "email": "Email",
     "addressValue": "Lozzo Atestino (Padova)",
     "heading": "Oasi Dolce Vita ti aspetta",
-    "description": "Sei pronto a vivere un'esperienza indimenticabile tra i Colli Euganei? Contattaci per prenotare il tuo soggiorno o per ricevere maggiori informazioni sulla nostra struttura. Ti risponderemo nel più breve tempo possibile.",
+    "description": "Sei pronto a prenotare la tua vacanza in villa con piscina privata sui Colli Euganei? Contattaci per verificare la disponibilità o ricevere informazioni su Oasi Dolce Vita a Lozzo Atestino. Ti risponderemo al più presto.",
     "formName": "Il tuo nome",
     "formEmail": "La tua email",
     "formMessage": "Il tuo messaggio",
@@ -181,10 +181,10 @@
     "breadcrumb": "Home > Disponibilità",
     "label": "Calendario",
     "heading": "Verifica la disponibilità",
-    "description": "Le date evidenziate sono già prenotate. Tutte le altre sono libere."
+    "description": "Le date evidenziate sono già prenotate. Tutte le altre sono libere: scegli il periodo perfetto per la tua vacanza relax con piscina privata sui Colli Euganei."
   },
   "footer": {
-    "tagline": "Casa vacanze di lusso a Lozzo Atestino, nel cuore dei Colli Euganei. Piscina privata, campo da tennis e panorama mozzafiato nel cuore del Veneto.",
+    "tagline": "Villa con piscina privata e campo da tennis a Lozzo Atestino, nel cuore dei Colli Euganei. La tua casa vacanze in Veneto tra relax, natura e comfort.",
     "navigation": "Navigazione",
     "rights": "Tutti i diritti riservati",
     "designedBy": "Designed by"

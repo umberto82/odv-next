@@ -1,11 +1,11 @@
 export const metadata = {
-  title: "Luoghi di interesse",
+  title: "Luoghi di interesse — Cosa visitare sui Colli Euganei",
   description:
-    "Cosa visitare sui Colli Euganei: terme di Abano e Montegrotto, Este, Arquà Petrarca, Villa dei Vescovi, musei, borghi medievali e natura. I dintorni di Oasi Dolce Vita a Lozzo Atestino.",
+    "Cosa fare e cosa visitare sui Colli Euganei: terme di Abano e Montegrotto, Este, Arquà Petrarca, Villa dei Vescovi, borghi medievali, percorsi natura e gite fuori porta. Scopri i dintorni di Lozzo Atestino durante il tuo soggiorno a Oasi Dolce Vita.",
   openGraph: {
-    title: "Luoghi di interesse | Oasi Dolce Vita",
+    title: "Luoghi di interesse — Cosa visitare sui Colli Euganei | Oasi Dolce Vita",
     description:
-      "Cosa visitare sui Colli Euganei: terme, borghi, natura e cultura nei dintorni di Oasi Dolce Vita a Lozzo Atestino.",
+      "Scopri cosa visitare sui Colli Euganei: terme, borghi, natura, gite fuori porta nei dintorni di Oasi Dolce Vita a Lozzo Atestino.",
   },
 };
 
