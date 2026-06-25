@@ -329,10 +329,6 @@
     flex-direction: column;
   }
 
-  .ps-image img {
-    height: 240px;
-  }
-
   .ps-outdoor-inner {
     padding: 100px 0 0;
   }
@@ -344,10 +340,6 @@
 
   .ps-cards {
     grid-template-columns: 1fr;
-  }
-
-  .ps-card-image {
-    height: 240px;
   }
 
   .ps-card-link {
@@ -366,6 +358,7 @@
 
   .ps-text h2 {
     text-align: center;
+    font-size: 1.5rem;
   }
 
   .ps-text p {
