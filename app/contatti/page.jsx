@@ -1,8 +1,10 @@
 'use client'
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { useTranslation } from '@/context/LanguageContext';
 import '../styles/contatti.css';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export default function ContattiPage() {
   const { t } = useTranslation();
@@ -43,27 +45,28 @@ export default function ContattiPage() {
           </div>
         </div>
       </section>
+      <Breadcrumbs hidden items={[{ name: 'Home', href: '/' }, { name: 'Contatti' }]} />
 
       <section className="contatti-section">
         <div className="container">
           <div className="contatti-cards">
             <div className="contatti-card">
               <div className="contatti-card-icon">
-                <img src="/imgs/contact/oasi-dolce-vita-indirizzo.png" alt={t('contatti.address')} />
+                <Image src="/imgs/contact/oasi-dolce-vita-indirizzo.png" alt={t('contatti.address')} width={40} height={40} />
               </div>
               <h3>{t('contatti.address')}</h3>
               <p>{t('contatti.addressValue')}</p>
             </div>
             <div className="contatti-card">
               <div className="contatti-card-icon">
-                <img src="/imgs/contact/oasi-dolce-vita-telefono.png" alt={t('contatti.phone')} />
+                <Image src="/imgs/contact/oasi-dolce-vita-telefono.png" alt={t('contatti.phone')} width={40} height={40} />
               </div>
               <h3>{t('contatti.phone')}</h3>
               <p><a href="tel:+393760051382">+39 376 005 1382</a></p>
             </div>
             <div className="contatti-card">
               <div className="contatti-card-icon">
-                <img src="/imgs/contact/oasi-dolce-vita-email.png" alt={t('contatti.email')} />
+                <Image src="/imgs/contact/oasi-dolce-vita-email.png" alt={t('contatti.email')} width={40} height={40} />
               </div>
               <h3>{t('contatti.email')}</h3>
               <p><a href="mailto:info@oasidolcevita.com">info@oasidolcevita.com</a></p>

@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useTranslation } from '@/context/LanguageContext'
 import '../app/styles/perfect_stay.css'
 
@@ -30,7 +31,7 @@ export default function PerfectStay() {
           {features.map((feature) => (
             <div key={feature.id} className="perfect-stay-card">
               <div className="perfect-stay-icon">
-                <img src={feature.img} alt={feature.alt} />
+                <Image src={feature.img} alt={feature.alt} width={50} height={50} />
               </div>
               <p>{t(feature.key)}</p>
             </div>

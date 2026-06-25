@@ -1,10 +1,13 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { cookies } from 'next/headers';
 import { getPostBySlug, getAllSlugs } from '@/lib/blog';
 import { remark } from 'remark';
 import html from 'remark-html';
 import '../../styles/blog.css';
+import JsonLd from '@/components/JsonLd';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 import itMessages from '@/messages/it.json';
 import enMessages from '@/messages/en.json';
@@ -23,6 +26,25 @@ export function generateStaticParams() {
   return slugs.map(slug => ({ slug }));
 }
 
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const cookieStore = await cookies();
+  const locale = cookieStore.get('locale')?.value || 'it';
+  const post = getPostBySlug(slug, locale);
+
+  if (!post) return {};
+
+  return {
+    title: post.title,
+    description: post.excerpt,
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      images: post.image ? [{ url: post.image }] : [],
+    },
+  };
+}
+
 export default async function BlogPostPage({ params }) {
   const { slug } = await params;
 
@@ -38,8 +60,22 @@ export default async function BlogPostPage({ params }) {
 
   const contentHtml = await markdownToHtml(post.content);
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    image: post.image,
+    datePublished: post.date,
+    author: {
+      "@type": "Person",
+      name: post.author,
+    },
+  };
+
   return (
     <main>
+      <JsonLd data={articleSchema} />
       <section className="blog-hero">
         <div className="container blog-hero-content">
           <div className="blog-hero-card">
@@ -48,6 +84,11 @@ export default async function BlogPostPage({ params }) {
           </div>
         </div>
       </section>
+      <Breadcrumbs hidden items={[
+        { name: 'Home', href: '/' },
+        { name: 'Blog', href: '/blog' },
+        { name: post.title },
+      ]} />
 
       <section className="blog-post">
         <div className="container">
@@ -64,7 +105,7 @@ export default async function BlogPostPage({ params }) {
               </div>
             </div>
             <div className="blog-post-img">
-              <img src={post.image} alt={post.title} />
+              <Image src={post.image} alt={post.title} fill sizes="(max-width: 768px) 100vw, 500px" />
             </div>
             <div
               className="blog-post-body"

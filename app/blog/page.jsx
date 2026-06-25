@@ -1,10 +1,23 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { cookies } from 'next/headers';
 import { getAllPosts } from '@/lib/blog';
 import '../styles/blog.css';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 import itMessages from '@/messages/it.json';
 import enMessages from '@/messages/en.json';
+
+export const metadata = {
+  title: "Blog",
+  description:
+    "Scopri i Colli Euganei, Lozzo Atestino e i dintorni: luoghi da visitare, esperienze, terme, città d'arte e consigli per la tua vacanza a Oasi Dolce Vita.",
+  openGraph: {
+    title: "Blog | Oasi Dolce Vita",
+    description:
+      "Scopri i Colli Euganei, Lozzo Atestino e i dintorni: luoghi da visitare, esperienze, terme, città d'arte e consigli per la tua vacanza.",
+  },
+};
 
 function getMessages(locale) {
   return locale === 'en' ? enMessages : itMessages;
@@ -32,6 +45,7 @@ export default async function BlogPage({ searchParams }) {
           </div>
         </div>
       </section>
+      <Breadcrumbs hidden items={[{ name: 'Home', href: '/' }, { name: 'Blog' }]} />
 
       <section className="blog-archive">
         <div className="container">
@@ -54,7 +68,7 @@ export default async function BlogPage({ searchParams }) {
             {posts.map(post => (
               <Link href={`/blog/${post.slug}`} key={post.slug} className="blog-card">
                 <div className="blog-card-img">
-                  <img src={post.image} alt={post.title} loading="lazy" />
+                  <Image src={post.image} alt={post.title} fill sizes="(max-width: 768px) 100vw, 33vw" />
                 </div>
                 <div className="blog-card-body">
                   <h2 className="blog-card-title">{post.title}</h2>

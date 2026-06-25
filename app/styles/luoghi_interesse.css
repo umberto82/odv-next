@@ -166,6 +166,7 @@
 }
 
 .luoghi-card-img {
+  position: relative;
   width: 260px;
   min-height: 200px;
   flex-shrink: 0;

@@ -1,9 +1,10 @@
 'use client'
 
 import { useState, useEffect, useCallback } from 'react';
-import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 import { useTranslation } from '@/context/LanguageContext';
 import '../styles/galleria.css';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 // Dataset of initial images using existing images in the project as placeholders/defaults
 const initialImages = [
@@ -262,7 +263,6 @@ const initialImages = [
 
 export default function GalleriaPage() {
     const { t } = useTranslation();
-    const router = useRouter();
     const [activeFilter, setActiveFilter] = useState('tutte');
     const [lightbox, setLightbox] = useState({
         isOpen: false,
@@ -323,10 +323,11 @@ export default function GalleriaPage() {
                 <div className="container galleria-hero-content">
                     <div className="galleria-hero-card">
                         <h1>{t('galleria.title')}</h1>
-                        <button className="breadcrumb-btn" onClick={() => router.push('/')}>{t('galleria.breadcrumb')}</button>
+                        <button className="breadcrumb-btn" onClick={() => window.location.href='/'}>{t('galleria.breadcrumb')}</button>
                     </div>
                 </div>
             </section>
+            <Breadcrumbs hidden items={[{ name: 'Home', href: '/' }, { name: 'Galleria' }]} />
 
             {/* GALLERY INTERACTIVE CONTAINER */}
             <section className="galleria-section">
@@ -369,11 +370,12 @@ export default function GalleriaPage() {
                                 onClick={() => openLightbox(index)}
                             >
                                 <div className="galleria-img-wrapper">
-                                    <img
+                                    <Image
                                         src={image.src}
                                         alt={image.title}
                                         className="galleria-img"
-                                        loading="lazy"
+                                        fill
+                                        sizes="(max-width: 768px) 100vw, 33vw"
                                     />
                                         <div className="galleria-overlay">
                                             <div className="galleria-info">

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import { useTranslation } from '@/context/LanguageContext'
 import '../app/styles/property_story.css'
 
@@ -49,9 +50,11 @@ export default function PropertyStory() {
         <div className="ps-card-wrapper">
           <div className="ps-block ps-block--panorama">
             <div className="ps-image">
-              <img
+              <Image
                 src="/imgs/home/property-story/panorama-colli-euganei-lozzo-atestino.jpg"
                 alt="Panorama of the Euganean Hills"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
 
@@ -95,7 +98,7 @@ export default function PropertyStory() {
                   onMouseLeave={() => setHoveredCard(null)}
                 >
                   <div className="ps-card-image">
-                    <img src={card.img} alt={card.alt} />
+                    <Image src={card.img} alt={card.alt} fill sizes="(max-width: 768px) 100vw, 33vw" />
                   </div>
 
                   <div className="ps-card-body">

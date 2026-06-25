@@ -99,7 +99,9 @@
 ========================= */
 
 .intro-image {
+  position: relative;
   flex: 1;
+  min-height: 300px;
 }
 
 .intro-image img {

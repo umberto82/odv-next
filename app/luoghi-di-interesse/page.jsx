@@ -1,9 +1,10 @@
 'use client'
 
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 import { useTranslation } from '@/context/LanguageContext';
 import '../styles/luoghi_interesse.css';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 const places = [
   // =====================
@@ -624,7 +625,6 @@ const places = [
 ];
 
 export default function LuoghiInteressePage() {
-  const router = useRouter();
   const { t, locale } = useTranslation();
   const [activeFilter, setActiveFilter] = useState('posti-da-visitare');
   const [activeSubFilter, setActiveSubFilter] = useState('ristoranti');
@@ -653,10 +653,11 @@ export default function LuoghiInteressePage() {
         <div className="container luoghi-hero-content">
           <div className="luoghi-hero-card">
             <h1>Luoghi d'interesse</h1>
-            <button className="breadcrumb-btn" onClick={() => router.push('/')}>Home &gt; Luoghi d'interesse</button>
+            <button className="breadcrumb-btn" onClick={() => window.location.href='/'}>Home &gt; Luoghi d'interesse</button>
           </div>
         </div>
       </section>
+      <Breadcrumbs hidden items={[{ name: 'Home', href: '/' }, { name: 'Luoghi di interesse' }]} />
 
       <section className="luoghi-section">
         <div className="container">
@@ -693,7 +694,7 @@ export default function LuoghiInteressePage() {
             {filteredPlaces.map(place => (
               <div key={place.id} className="luoghi-card">
                 <div className="luoghi-card-img">
-                  <img src={place.image} alt={place.name} loading="lazy" />
+                  <Image src={place.image} alt={place.name} fill sizes="(max-width: 768px) 100vw, 33vw" />
                 </div>
                 <div className="luoghi-card-body">
                   <h3 className="luoghi-card-title">{locale === 'en' && place.nameEn ? place.nameEn : place.name}</h3>

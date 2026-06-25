@@ -1,8 +1,20 @@
 import { cookies } from 'next/headers';
 import '../styles/disponibilita.css';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 import itMessages from '@/messages/it.json';
 import enMessages from '@/messages/en.json';
+
+export const metadata = {
+  title: "Disponibilità",
+  description:
+    "Verifica la disponibilità di Oasi Dolce Vita, casa vacanze sui Colli Euganei con piscina privata e campo da tennis. Prenota il tuo soggiorno a Lozzo Atestino.",
+  openGraph: {
+    title: "Disponibilità | Oasi Dolce Vita",
+    description:
+      "Verifica la disponibilità e prenota Oasi Dolce Vita, casa vacanze sui Colli Euganei.",
+  },
+};
 
 function getMessages(locale) {
   return locale === 'en' ? enMessages : itMessages;
@@ -23,6 +35,7 @@ export default async function DisponibilitaPage() {
           </div>
         </div>
       </section>
+      <Breadcrumbs hidden items={[{ name: 'Home', href: '/' }, { name: 'Disponibilità' }]} />
 
       <section className="disp-section">
         <div className="container">

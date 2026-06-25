@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useTranslation } from '@/context/LanguageContext'
 import '../app/styles/footer.css'
 
@@ -12,10 +13,12 @@ export default function Footer() {
 
       <div className="footer-content container">
         <div className="footer-logo-col">
-          <img
+          <Image
             src="/imgs/home/header/oasi-dolce-vita-logo.png"
             alt="Oasi Dolce Vita logo casa vacanze Colli Euganei"
             className="footer-logo-img"
+            width={120}
+            height={120}
           />
         </div>
 

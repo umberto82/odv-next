@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import '../app/styles/intro_section.css'
 
 export default function IntroSection() {
@@ -21,9 +22,11 @@ export default function IntroSection() {
           </div>
 
           <div className="intro-image">
-            <img
+            <Image
               src="/imgs/home/intro-section/oasi-dolce-vita-casa-vacanze-esterno-veneto.jpg"
               alt="Casa vacanze Oasi Dolce Vita immersa nel verde dei Colli Euganei in Veneto"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
         </div>
@@ -43,9 +46,11 @@ export default function IntroSection() {
           </div>
 
           <div className="intro-image">
-            <img
+            <Image
               src="/imgs/home/intro-section/oasi-dolce-vita-cucina-attrezzata-casa-vacanze.jpg"
               alt="Cucina moderna e completamente attrezzata della casa vacanze Oasi Dolce Vita"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
         </div>

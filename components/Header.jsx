@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
+import Image from 'next/image'
 import { useTranslation } from '@/context/LanguageContext'
 
 const flags = {
@@ -28,9 +29,11 @@ export default function Header() {
         {/* LOGO */}
         <div className="logo">
           <a href="/">
-            <img
+            <Image
               src="/imgs/home/header/oasi-dolce-vita-logo.png"
               alt="Oasi Dolce Vita"
+              width={50}
+              height={50}
             />
           </a>
         </div>
@@ -88,9 +91,11 @@ export default function Header() {
       <div className={`mobile-menu ${isOpen ? 'open' : ''}`}>
         <div className="mobile-menu-logo">
           <a href="/">
-            <img
+            <Image
               src="/imgs/home/header/oasi-dolce-vita-logo.png"
               alt="Oasi Dolce Vita"
+              width={50}
+              height={50}
             />
           </a>
         </div>
