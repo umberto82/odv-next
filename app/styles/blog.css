@@ -235,6 +235,10 @@
   border-radius: 12px;
 }
 
+.blog-post-img img {
+  object-fit: cover !important;
+}
+
 .blog-post-title {
   font-family: var(--font-jost), sans-serif;
   font-size: 2rem;
