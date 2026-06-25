@@ -694,7 +694,7 @@ export default function LuoghiInteressePage() {
             {filteredPlaces.map(place => (
               <div key={place.id} className="luoghi-card">
                 <div className="luoghi-card-img">
-                  <Image src={place.image} alt={place.name} fill sizes="(max-width: 768px) 100vw, 33vw" />
+                  <Image src={place.image} alt={place.name} width={600} height={400} style={{ width: '100%', height: 'auto' }} sizes="(max-width: 768px) 100vw, 33vw" />
                 </div>
                 <div className="luoghi-card-body">
                   <h3 className="luoghi-card-title">{locale === 'en' && place.nameEn ? place.nameEn : place.name}</h3>

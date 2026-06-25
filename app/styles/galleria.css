@@ -146,7 +146,6 @@
 
 .galleria-item {
   position: relative;
-  aspect-ratio: 4/3;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05),
@@ -164,14 +163,10 @@
 .galleria-img-wrapper {
   width: 100%;
   height: 100%;
-  position: relative;
   overflow: hidden;
 }
 
 .galleria-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 

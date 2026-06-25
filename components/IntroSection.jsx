@@ -25,7 +25,9 @@ export default function IntroSection() {
             <Image
               src="/imgs/home/intro-section/oasi-dolce-vita-casa-vacanze-esterno-veneto.jpg"
               alt="Casa vacanze Oasi Dolce Vita immersa nel verde dei Colli Euganei in Veneto"
-              fill
+              width={600}
+              height={400}
+              style={{ width: '100%', height: 'auto' }}
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
@@ -49,7 +51,9 @@ export default function IntroSection() {
             <Image
               src="/imgs/home/intro-section/oasi-dolce-vita-cucina-attrezzata-casa-vacanze.jpg"
               alt="Cucina moderna e completamente attrezzata della casa vacanze Oasi Dolce Vita"
-              fill
+              width={600}
+              height={400}
+              style={{ width: '100%', height: 'auto' }}
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>

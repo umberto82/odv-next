@@ -53,7 +53,9 @@ export default function PropertyStory() {
               <Image
                 src="/imgs/home/property-story/panorama-colli-euganei-lozzo-atestino.jpg"
                 alt="Panorama of the Euganean Hills"
-                fill
+                width={2879}
+                height={1920}
+                style={{ width: '100%', height: 'auto' }}
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
@@ -98,7 +100,7 @@ export default function PropertyStory() {
                   onMouseLeave={() => setHoveredCard(null)}
                 >
                   <div className="ps-card-image">
-                    <Image src={card.img} alt={card.alt} fill sizes="(max-width: 768px) 100vw, 33vw" />
+                    <Image src={card.img} alt={card.alt} width={600} height={400} sizes="(max-width: 768px) 100vw, 33vw" style={{ width: '100%', height: 'auto' }} />
                   </div>
 
                   <div className="ps-card-body">

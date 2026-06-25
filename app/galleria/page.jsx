@@ -13,12 +13,16 @@ const initialImages = [
     // =====================
     {
         id: 1,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/esterni/oasi-dolce-vita-vacanze-esterno-veneto.jpg',
         category: 'esterni',
         title: 'Piazzale principale'
     },
     {
         id: 2,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/esterni/portico2.jpg',
         category: 'esterni',
         title: 'Vista esterna casa'
@@ -31,36 +35,48 @@ const initialImages = [
     // },
     {
         id: 4,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/esterni/casafuori3.jpg',
         category: 'esterni',
         title: 'Casa esterna'
     },
     {
         id: 5,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/esterni/portico.jpg',
         category: 'esterni',
         title: 'Portico'
     },
     {
         id: 6,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/esterni/casafuori4.jpg',
         category: 'esterni',
         title: 'Portico laterale'
     },
     {
         id: 7,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/esterni/scorcio-abarth.jpg',
         category: 'esterni',
         title: 'Scorcio panoramico'
     },
     {
         id: 8,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/esterni/tennis3.jpg',
         category: 'esterni',
         title: 'Campo da tennis'
     },
     {
         id: 9,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/esterni/vistacolli.jpg',
         category: 'esterni',
         title: 'Vista colli Euganei'
@@ -71,126 +87,168 @@ const initialImages = [
     // =====================
     {
         id: 10,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/interni/camera2.jpg',
         category: 'interni',
         title: 'Camera 1'
     },
     {
         id: 11,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/interni/camera3.jpg',
         category: 'interni',
         title: 'Camera 2'
     },
     {
         id: 12,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/interni/camera1a.jpg',
         category: 'interni',
         title: 'Camera 3'
     },
     {
         id: 13,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/interni/camera1.jpg',
         category: 'interni',
         title: 'Camera matrimoniale'
     },
     {
         id: 14,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/interni/bagno2.jpg',
         category: 'interni',
         title: 'Bagno 2'
     },
     {
         id: 15,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/interni/bagnetto.jpg',
         category: 'interni',
         title: 'Bagnetto piano terra'
     },
     {
         id: 16,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/interni/camera2a.jpg',
         category: 'interni',
         title: 'Camera dettaglio 2'
     },
     {
         id: 17,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/interni/bagno1.jpg',
         category: 'interni',
         title: 'Bagno 1'
     },
     {
         id: 18,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/interni/camera3a.jpg',
         category: 'interni',
         title: 'Camera 3 dettaglio'
     },
     {
         id: 19,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/interni/camera4.jpg',
         category: 'interni',
         title: 'Camera 4'
     },
     {
         id: 20,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/interni/cucina1.jpg',
         category: 'interni',
         title: 'Cucina'
     },
     {
         id: 21,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/interni/cucina2.jpg',
         category: 'interni',
         title: 'Cucina dettaglio'
     },
     {
         id: 22,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/interni/cucina3.jpg',
         category: 'interni',
         title: 'Cucina angolo'
     },
     {
         id: 23,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/interni/cucina4.jpg',
         category: 'interni',
         title: 'Cucina completa'
     },
     {
         id: 24,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/interni/ingresso.jpg',
         category: 'interni',
         title: 'Ingresso'
     },
     {
         id: 25,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/interni/salotto1.jpg',
         category: 'interni',
         title: 'Salotto'
     },
     {
         id: 26,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/interni/salotto2.jpg',
         category: 'interni',
         title: 'Salotto vista 2'
     },
     {
         id: 27,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/interni/salotto3.jpg',
         category: 'interni',
         title: 'Salotto dettaglio'
     },
     {
         id: 28,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/interni/soppalco.jpg',
         category: 'interni',
         title: 'Soppalco'
     },
     {
         id: 29,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/interni/stanzetta1.jpg',
         category: 'interni',
         title: 'Stanzetta'
     },
     {
         id: 30,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/interni/stanzetta2.jpg',
         category: 'interni',
         title: 'Stanzetta 2'
@@ -201,60 +259,80 @@ const initialImages = [
     // =====================
     {
         id: 31,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/piscina/oasi-dolce-vita-piscina.jpg',
         category: 'piscina',
         title: 'Piscina principale'
     },
     {
         id: 32,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/piscina/piscina1.jpg',
         category: 'piscina',
         title: 'Piscina'
     },
     {
         id: 33,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/piscina/piscinacolli1.jpg',
         category: 'piscina',
         title: 'Piscina vista sui colli euganei'
     },
     {
         id: 34,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/piscina/piscina2.jpg',
         category: 'piscina',
         title: 'Piscina lato'
     },
     {
         id: 35,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/piscina/piscina3.jpg',
         category: 'piscina',
         title: 'Piscina dettaglio'
     },
     {
         id: 36,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/piscina/bagnetto-piscina.jpg',
         category: 'piscina',
         title: 'Bagnetto piscina spogliatoio'
     },
     {
         id: 37,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/piscina/piscinadivanetto.jpg',
         category: 'piscina',
         title: 'Piscina acqua'
     },
     {
         id: 38,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/piscina/piscinaingresso.jpg',
         category: 'piscina',
         title: 'Dettaglio legno'
     },
     {
         id: 39,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/piscina/spogliatoio-piscina.jpg',
         category: 'piscina',
         title: 'Cucinino spogliatoio'
     },
     {
         id: 40,
+        width: 600,
+        height: 400,
         src: '/imgs/galleria/piscina/spogliatoio2.jpg',
         category: 'piscina',
         title: 'Ingresso spogliatoio'
@@ -374,7 +452,9 @@ export default function GalleriaPage() {
                                         src={image.src}
                                         alt={image.title}
                                         className="galleria-img"
-                                        fill
+                                        width={image.width || 600}
+                                        height={image.height || 400}
+                                        style={{ width: '100%', height: 'auto' }}
                                         sizes="(max-width: 768px) 100vw, 33vw"
                                     />
                                         <div className="galleria-overlay">

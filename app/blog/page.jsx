@@ -68,7 +68,7 @@ export default async function BlogPage({ searchParams }) {
             {posts.map(post => (
               <Link href={`/blog/${post.slug}`} key={post.slug} className="blog-card">
                 <div className="blog-card-img">
-                  <Image src={post.image} alt={post.title} fill sizes="(max-width: 768px) 100vw, 33vw" />
+                  <Image src={post.image} alt={post.title} width={600} height={400} style={{ width: '100%', height: 'auto' }} sizes="(max-width: 768px) 100vw, 33vw" />
                 </div>
                 <div className="blog-card-body">
                   <h2 className="blog-card-title">{post.title}</h2>
