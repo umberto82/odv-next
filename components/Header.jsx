@@ -47,6 +47,7 @@ export default function Header() {
           <a href={`${p}/blog`}>{t('header.blog')}</a>
           <a href={`${p}/contatti`}>{t('header.contacts')}</a>
           <a href={`${p}/disponibilita`}>{t('header.availability')}</a>
+          <a href="https://oasi-dolce-vita.amenitiz.io/it/booking/room#DatesGuests-BE" target="_blank" rel="noopener noreferrer">{t('header.booking')}</a>
         </nav>
 
         {/* LANGUAGE SWITCHER */}
@@ -118,6 +119,9 @@ export default function Header() {
         </a>
         <a href={`${p}/disponibilita`} onClick={() => setIsOpen(false)}>
           {t('header.availability')}
+        </a>
+        <a href="https://oasi-dolce-vita.amenitiz.io/it/booking/room#DatesGuests-BE" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>
+          {t('header.booking')}
         </a>
 
         <div className="mobile-lang">
