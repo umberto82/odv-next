@@ -1,11 +1,11 @@
 export const metadata = {
-  title: "Galleria",
+  title: "Galleria foto — Villa con piscina Colli Euganei | Oasi Dolce Vita",
   description:
-    "Galleria fotografica di Oasi Dolce Vita: piscina privata, campo da tennis, interni curati, vista panoramica sui Colli Euganei. Tutte le foto della villa vacanze a Lozzo Atestino.",
+    "Galleria fotografica di Oasi Dolce Vita: piscina privata a sfioro, campo da tennis, interni con travi a vista, giardino e vista panoramica sui Colli Euganei. Tutte le foto della villa vacanze a Lozzo Atestino.",
   openGraph: {
-    title: "Galleria | Oasi Dolce Vita",
+    title: "Galleria foto — Villa con piscina Colli Euganei | Oasi Dolce Vita",
     description:
-      "Galleria fotografica di Oasi Dolce Vita: piscina privata, campo da tennis e vista sui Colli Euganei a Lozzo Atestino.",
+      "Galleria fotografica: piscina privata, campo da tennis e vista sui Colli Euganei. Foto di Oasi Dolce Vita, villa vacanze a Lozzo Atestino.",
   },
 };
 

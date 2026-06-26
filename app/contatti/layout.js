@@ -1,11 +1,11 @@
 export const metadata = {
-  title: "Contatti",
+  title: "Contatti — Prenota Oasi Dolce Vita | Villa con piscina Colli Euganei",
   description:
-    "Contatta Oasi Dolce Vita, villa con piscina privata e campo da tennis sui Colli Euganei. Telefono, WhatsApp, email e modulo per prenotare il tuo soggiorno a Lozzo Atestino. Prenota ora la tua vacanza relax.",
+    "Contatta Oasi Dolce Vita, villa con piscina privata e campo da tennis sui Colli Euganei a Lozzo Atestino. Chiama, scrivi su WhatsApp o invia una mail per prenotare la tua vacanza relax in Veneto.",
   openGraph: {
-    title: "Contatti | Oasi Dolce Vita",
+    title: "Contatti — Prenota Oasi Dolce Vita | Villa con piscina Colli Euganei",
     description:
-      "Contatta Oasi Dolce Vita, villa con piscina privata sui Colli Euganei. Telefono, WhatsApp ed email. Prenota il tuo soggiorno a Lozzo Atestino.",
+      "Prenota Oasi Dolce Vita, villa con piscina privata e campo da tennis sui Colli Euganei. Telefono, WhatsApp ed email. Vacanze relax a Lozzo Atestino.",
   },
 };
 

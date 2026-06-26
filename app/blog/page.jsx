@@ -9,13 +9,13 @@ import itMessages from '@/messages/it.json';
 import enMessages from '@/messages/en.json';
 
 export const metadata = {
-  title: "Blog",
+  title: "Blog — Consigli di viaggio sui Colli Euganei | Oasi Dolce Vita",
   description:
-    "Scopri i Colli Euganei, Lozzo Atestino e i dintorni: luoghi da visitare, esperienze, terme, città d'arte e consigli per la tua vacanza a Oasi Dolce Vita.",
+    "Scopri i Colli Euganei, Lozzo Atestino e i dintorni: terme di Abano e Montegrotto, borghi da visitare, cantine, esperienze enogastronomiche e consigli per la tua vacanza in villa con piscina a Oasi Dolce Vita.",
   openGraph: {
-    title: "Blog | Oasi Dolce Vita",
+    title: "Blog — Consigli di viaggio sui Colli Euganei | Oasi Dolce Vita",
     description:
-      "Scopri i Colli Euganei, Lozzo Atestino e i dintorni: luoghi da visitare, esperienze, terme, città d'arte e consigli per la tua vacanza.",
+      "Scopri i Colli Euganei: terme, borghi, cantine e consigli di viaggio. Idee per la tua vacanza in villa con piscina a Oasi Dolce Vita.",
   },
 };
 
