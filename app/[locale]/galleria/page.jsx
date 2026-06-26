@@ -3,10 +3,9 @@
 import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import { useTranslation } from '@/context/LanguageContext';
-import '../styles/galleria.css';
+import '../../styles/galleria.css';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
-// Dataset of initial images using existing images in the project as placeholders/defaults
 const initialImages = [
     // =====================
     // ESTERNI
@@ -340,7 +339,8 @@ const initialImages = [
 ];
 
 export default function GalleriaPage() {
-    const { t } = useTranslation();
+    const { t, locale } = useTranslation();
+    const p = `/${locale}`;
     const [activeFilter, setActiveFilter] = useState('tutte');
     const [lightbox, setLightbox] = useState({
         isOpen: false,
@@ -401,11 +401,11 @@ export default function GalleriaPage() {
                 <div className="container galleria-hero-content">
                     <div className="galleria-hero-card">
                         <h1>{t('galleria.title')}</h1>
-                        <button className="breadcrumb-btn" onClick={() => window.location.href='/'}>{t('galleria.breadcrumb')}</button>
+                        <a href={p} className="breadcrumb-btn">{t('galleria.breadcrumb')}</a>
                     </div>
                 </div>
             </section>
-            <Breadcrumbs hidden items={[{ name: 'Home', href: '/' }, { name: 'Galleria' }]} />
+            <Breadcrumbs hidden items={[{ name: 'Home', href: p }, { name: 'Galleria' }]} />
 
             {/* GALLERY INTERACTIVE CONTAINER */}
             <section className="galleria-section">

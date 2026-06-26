@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { useTranslation } from '@/context/LanguageContext';
-import '../styles/luoghi_interesse.css';
+import '../../styles/luoghi_interesse.css';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 const places = [
@@ -626,6 +626,7 @@ const places = [
 
 export default function LuoghiInteressePage() {
   const { t, locale } = useTranslation();
+  const p = `/${locale}`;
   const [activeFilter, setActiveFilter] = useState('posti-da-visitare');
   const [activeSubFilter, setActiveSubFilter] = useState('ristoranti');
 
@@ -653,11 +654,11 @@ export default function LuoghiInteressePage() {
         <div className="container luoghi-hero-content">
           <div className="luoghi-hero-card">
             <h1>Luoghi d'interesse</h1>
-            <button className="breadcrumb-btn" onClick={() => window.location.href='/'}>Home &gt; Luoghi d'interesse</button>
+            <a href={p} className="breadcrumb-btn">Home &gt; Luoghi d'interesse</a>
           </div>
         </div>
       </section>
-      <Breadcrumbs hidden items={[{ name: 'Home', href: '/' }, { name: 'Luoghi di interesse' }]} />
+      <Breadcrumbs hidden items={[{ name: 'Home', href: p }, { name: 'Luoghi di interesse' }]} />
 
       <section className="luoghi-section">
         <div className="container">

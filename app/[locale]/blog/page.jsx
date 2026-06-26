@@ -1,8 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { cookies } from 'next/headers';
 import { getAllPosts } from '@/lib/blog';
-import '../styles/blog.css';
+import '../../styles/blog.css';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 import itMessages from '@/messages/it.json';
@@ -23,10 +22,10 @@ function getMessages(locale) {
   return locale === 'en' ? enMessages : itMessages;
 }
 
-export default async function BlogPage({ searchParams }) {
-  const cookieStore = await cookies();
-  const locale = cookieStore.get('locale')?.value || 'it';
+export default async function BlogPage({ params, searchParams }) {
+  const { locale } = await params;
   const msg = getMessages(locale).blog;
+  const p = `/${locale}`;
 
   const filter = searchParams?.filter || 'tutti';
   const allPosts = getAllPosts(locale);
@@ -41,23 +40,23 @@ export default async function BlogPage({ searchParams }) {
         <div className="container blog-hero-content">
           <div className="blog-hero-card">
             <h1>{msg.title}</h1>
-            <a href="/" className="breadcrumb-btn">{msg.breadcrumb}</a>
+            <a href={p || '/'} className="breadcrumb-btn">{msg.breadcrumb}</a>
           </div>
         </div>
       </section>
-      <Breadcrumbs hidden items={[{ name: 'Home', href: '/' }, { name: 'Blog' }]} />
+      <Breadcrumbs hidden items={[{ name: 'Home', href: p || '/' }, { name: 'Blog' }]} />
 
       <section className="blog-archive">
         <div className="container">
           <div className="blog-filters">
             <Link
-              href="/blog"
+              href={`${p}/blog`}
               className={`filter-btn ${filter === 'tutti' ? 'active' : ''}`}
             >
               {msg.all}
             </Link>
             <Link
-              href="/blog?filter=recenti"
+              href={`${p}/blog?filter=recenti`}
               className={`filter-btn ${filter === 'recenti' ? 'active' : ''}`}
             >
               {msg.recent}
@@ -66,7 +65,7 @@ export default async function BlogPage({ searchParams }) {
 
           <div className="blog-grid">
             {posts.map(post => (
-              <Link href={`/blog/${post.slug}`} key={post.slug} className="blog-card">
+              <Link href={`${p}/blog/${post.slug}`} key={post.slug} className="blog-card">
                 <div className="blog-card-img">
                   <Image src={post.image} alt={post.title} width={600} height={400} style={{ width: '100%', height: 'auto' }} sizes="(max-width: 768px) 100vw, 33vw" />
                 </div>

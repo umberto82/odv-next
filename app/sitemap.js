@@ -4,53 +4,38 @@ export default async function sitemap() {
   const siteUrl =
     process.env.NEXT_PUBLIC_SITE_URL || "https://oasidolcevita.com";
 
-  const posts = getAllPosts("it");
+  const locales = ["it", "en"];
+  const entries = [];
 
-  const staticPages = [
-    {
-      url: siteUrl,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 1,
-    },
-    {
-      url: `${siteUrl}/galleria`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${siteUrl}/luoghi-di-interesse`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${siteUrl}/blog`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: `${siteUrl}/contatti`,
-      lastModified: new Date(),
-      changeFrequency: "yearly",
-      priority: 0.6,
-    },
-    {
-      url: `${siteUrl}/disponibilita`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
+  const staticPaths = [
+    { path: "", priority: 1, changeFrequency: "monthly" },
+    { path: "galleria", priority: 0.8, changeFrequency: "monthly" },
+    { path: "luoghi-di-interesse", priority: 0.8, changeFrequency: "monthly" },
+    { path: "blog", priority: 0.9, changeFrequency: "weekly" },
+    { path: "contatti", priority: 0.6, changeFrequency: "yearly" },
+    { path: "disponibilita", priority: 0.7, changeFrequency: "weekly" },
   ];
 
-  const blogPosts = posts.map((post) => ({
-    url: `${siteUrl}/blog/${post.slug}`,
-    lastModified: new Date(post.date),
-    changeFrequency: "monthly",
-    priority: 0.7,
-  }));
+  for (const locale of locales) {
+    for (const page of staticPaths) {
+      entries.push({
+        url: `${siteUrl}/${locale}${page.path ? `/${page.path}` : ""}`,
+        lastModified: new Date(),
+        changeFrequency: page.changeFrequency,
+        priority: page.priority,
+      });
+    }
 
-  return [...staticPages, ...blogPosts];
+    const posts = getAllPosts(locale);
+    for (const post of posts) {
+      entries.push({
+        url: `${siteUrl}/${locale}/blog/${post.slug}`,
+        lastModified: new Date(post.date),
+        changeFrequency: "monthly",
+        priority: 0.7,
+      });
+    }
+  }
+
+  return entries;
 }

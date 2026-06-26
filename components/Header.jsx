@@ -14,6 +14,7 @@ export default function Header() {
   const [langOpen, setLangOpen] = useState(false)
   const { locale, setLocale, t } = useTranslation()
   const ref = useRef()
+  const p = `/${locale}`
 
   useEffect(() => {
     const handleClick = (e) => {
@@ -28,7 +29,7 @@ export default function Header() {
       <div className="nav container">
         {/* LOGO */}
         <div className="logo">
-          <a href="/">
+          <a href={p}>
             <Image
               src="/imgs/home/header/oasi-dolce-vita-logo.png"
               alt="Oasi Dolce Vita"
@@ -40,12 +41,12 @@ export default function Header() {
 
         {/* DESKTOP NAV */}
         <nav className="menu">
-          <a href="/">{t('header.home')}</a>
-          <a href="/galleria">{t('header.gallery')}</a>
-          <a href="/luoghi-di-interesse">{t('header.places')}</a>
-          <a href="/blog">{t('header.blog')}</a>
-          <a href="/contatti">{t('header.contacts')}</a>
-          <a href="/disponibilita">{t('header.availability')}</a>
+          <a href={p}>{t('header.home')}</a>
+          <a href={`${p}/galleria`}>{t('header.gallery')}</a>
+          <a href={`${p}/luoghi-di-interesse`}>{t('header.places')}</a>
+          <a href={`${p}/blog`}>{t('header.blog')}</a>
+          <a href={`${p}/contatti`}>{t('header.contacts')}</a>
+          <a href={`${p}/disponibilita`}>{t('header.availability')}</a>
         </nav>
 
         {/* LANGUAGE SWITCHER */}
@@ -90,7 +91,7 @@ export default function Header() {
       {/* MOBILE MENU */}
       <div className={`mobile-menu ${isOpen ? 'open' : ''}`}>
         <div className="mobile-menu-logo">
-          <a href="/">
+          <a href={p}>
             <Image
               src="/imgs/home/header/oasi-dolce-vita-logo.png"
               alt="Oasi Dolce Vita"
@@ -100,22 +101,22 @@ export default function Header() {
           </a>
         </div>
 
-        <a href="/" onClick={() => setIsOpen(false)}>
+        <a href={p} onClick={() => setIsOpen(false)}>
           {t('header.home')}
         </a>
-        <a href="/galleria" onClick={() => setIsOpen(false)}>
+        <a href={`${p}/galleria`} onClick={() => setIsOpen(false)}>
           {t('header.gallery')}
         </a>
-        <a href="/luoghi-di-interesse" onClick={() => setIsOpen(false)}>
+        <a href={`${p}/luoghi-di-interesse`} onClick={() => setIsOpen(false)}>
           {t('header.places')}
         </a>
-        <a href="/blog" onClick={() => setIsOpen(false)}>
+        <a href={`${p}/blog`} onClick={() => setIsOpen(false)}>
           {t('header.blog')}
         </a>
-        <a href="/contatti" onClick={() => setIsOpen(false)}>
+        <a href={`${p}/contatti`} onClick={() => setIsOpen(false)}>
           {t('header.contacts')}
         </a>
-        <a href="/disponibilita" onClick={() => setIsOpen(false)}>
+        <a href={`${p}/disponibilita`} onClick={() => setIsOpen(false)}>
           {t('header.availability')}
         </a>
 

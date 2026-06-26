@@ -1,5 +1,4 @@
-import { cookies } from 'next/headers';
-import '../styles/disponibilita.css';
+import '../../styles/disponibilita.css';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
 import itMessages from '@/messages/it.json';
@@ -20,10 +19,10 @@ function getMessages(locale) {
   return locale === 'en' ? enMessages : itMessages;
 }
 
-export default async function DisponibilitaPage() {
-  const cookieStore = await cookies();
-  const locale = cookieStore.get('locale')?.value || 'it';
+export default async function DisponibilitaPage({ params }) {
+  const { locale } = await params;
   const msg = getMessages(locale).disponibilita;
+  const p = `/${locale}`;
 
   return (
     <main>
@@ -31,11 +30,11 @@ export default async function DisponibilitaPage() {
         <div className="container disp-hero-content">
           <div className="disp-hero-card">
             <h1>{msg.title}</h1>
-            <a href="/" className="breadcrumb-btn">{msg.breadcrumb}</a>
+            <a href={p} className="breadcrumb-btn">{msg.breadcrumb}</a>
           </div>
         </div>
       </section>
-      <Breadcrumbs hidden items={[{ name: 'Home', href: '/' }, { name: 'Disponibilità' }]} />
+      <Breadcrumbs hidden items={[{ name: 'Home', href: p }, { name: 'Disponibilità' }]} />
 
       <section className="disp-section">
         <div className="container">

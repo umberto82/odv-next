@@ -1,11 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { cookies } from 'next/headers';
 import { getPostBySlug, getAllSlugs } from '@/lib/blog';
 import { remark } from 'remark';
 import html from 'remark-html';
-import '../../styles/blog.css';
+import '../../../styles/blog.css';
 import JsonLd from '@/components/JsonLd';
 import Breadcrumbs from '@/components/Breadcrumbs';
 
@@ -23,13 +22,14 @@ async function markdownToHtml(markdown) {
 
 export function generateStaticParams() {
   const slugs = getAllSlugs();
-  return slugs.map(slug => ({ slug }));
+  const locales = ['it', 'en'];
+  return locales.flatMap(locale =>
+    slugs.map(slug => ({ locale, slug }))
+  );
 }
 
 export async function generateMetadata({ params }) {
-  const { slug } = await params;
-  const cookieStore = await cookies();
-  const locale = cookieStore.get('locale')?.value || 'it';
+  const { locale, slug } = await params;
   const post = getPostBySlug(slug, locale);
 
   if (!post) return {};
@@ -46,11 +46,9 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function BlogPostPage({ params }) {
-  const { slug } = await params;
-
-  const cookieStore = await cookies();
-  const locale = cookieStore.get('locale')?.value || 'it';
+  const { locale, slug } = await params;
   const msg = getMessages(locale).blog;
+  const p = `/${locale}`;
 
   const post = getPostBySlug(slug, locale);
 
@@ -80,13 +78,13 @@ export default async function BlogPostPage({ params }) {
         <div className="container blog-hero-content">
           <div className="blog-hero-card">
             <h1>{msg.title}</h1>
-            <a href="/" className="breadcrumb-btn">{msg.breadcrumb}</a>
+            <a href={p} className="breadcrumb-btn">{msg.breadcrumb}</a>
           </div>
         </div>
       </section>
       <Breadcrumbs hidden items={[
-        { name: 'Home', href: '/' },
-        { name: 'Blog', href: '/blog' },
+        { name: 'Home', href: p },
+        { name: 'Blog', href: `${p}/blog` },
         { name: post.title },
       ]} />
 
@@ -112,7 +110,7 @@ export default async function BlogPostPage({ params }) {
               dangerouslySetInnerHTML={{ __html: contentHtml }}
             />
             <div className="blog-post-footer">
-              <a href="/blog" className="blog-back-link">{msg.backToBlog}</a>
+              <a href={`${p}/blog`} className="blog-back-link">{msg.backToBlog}</a>
             </div>
           </div>
         </div>

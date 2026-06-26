@@ -1,16 +1,7 @@
 import "./globals.css";
 
-import ClientLayout from "./client-layout";
-
-import { Jost } from "next/font/google";
-
-const jost = Jost({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-jost",
-});
-
 export const metadata = {
+  metadataBase: new URL("https://oasidolcevita.com"),
   title: {
     default: "Oasi Dolce Vita — Villa con piscina privata e campo da tennis sui Colli Euganei | Lozzo Atestino",
     template: "%s | Oasi Dolce Vita",
@@ -38,11 +29,5 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="it" className={jost.variable}>
-      <body>
-        <ClientLayout>{children}</ClientLayout>
-      </body>
-    </html>
-  );
+  return children;
 }

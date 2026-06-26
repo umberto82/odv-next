@@ -42,7 +42,8 @@ const outdoorCards = [
 
 export default function PropertyStory() {
   const [hoveredCard, setHoveredCard] = useState(null)
-  const { t } = useTranslation()
+  const { t, locale } = useTranslation()
+  const p = `/${locale}`
 
   return (
     <section className="property-story">
@@ -106,7 +107,7 @@ export default function PropertyStory() {
                   <div className="ps-card-body">
                     <h3>{t(card.titleKey)}</h3>
                     <p>{t(card.textKey)}</p>
-                    <a href={card.link} className="ps-card-link">
+                    <a href={`${p}${card.link}`} className="ps-card-link">
                       {t('propertyStory.galleryLink')}
                     </a>
                   </div>

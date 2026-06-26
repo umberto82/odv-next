@@ -1,7 +1,7 @@
 'use client'
 
 import { createContext, useContext, useState, useCallback, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useParams, useRouter, usePathname } from 'next/navigation';
 
 const LanguageContext = createContext();
 
@@ -17,18 +17,19 @@ function normalizeLocale(raw) {
 }
 
 export function LanguageProvider({ children }) {
-  const [locale, setLocaleState] = useState('it');
+  const params = useParams();
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const urlLocale = normalizeLocale(params?.locale);
+  const [locale, setLocaleState] = useState(urlLocale);
   const [loadedMessages, setLoadedMessages] = useState(itMessages);
   const [ready, setReady] = useState(true);
   const [loading, setLoading] = useState(false);
-  const router = useRouter();
 
   useEffect(() => {
-    const saved = localStorage.getItem('locale');
-    const norm = normalizeLocale(saved);
-    setLocaleState(norm);
-    if (norm !== 'it') setReady(false);
-  }, []);
+    setLocaleState(urlLocale);
+  }, [urlLocale]);
 
   useEffect(() => {
     const msgs = messages[locale];
@@ -48,11 +49,10 @@ export function LanguageProvider({ children }) {
 
   const setLocale = useCallback((newLocale) => {
     const norm = normalizeLocale(newLocale);
-    setLocaleState(norm);
-    localStorage.setItem('locale', norm);
     document.cookie = `locale=${norm};path=/;max-age=${60*60*24*365}`;
-    router.refresh();
-  }, [router]);
+    const newPath = pathname.replace(/^\/(en|it)(\/|$)/, `/${norm}$2`);
+    router.push(newPath);
+  }, [pathname, router]);
 
   const t = useCallback((key) => {
     if (!ready || !loadedMessages) return '';

@@ -3,11 +3,14 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { useTranslation } from '@/context/LanguageContext';
-import '../styles/contatti.css';
+import '../../styles/contatti.css';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import { useParams } from 'next/navigation';
 
 export default function ContattiPage() {
-  const { t } = useTranslation();
+  const { t, locale } = useTranslation();
+  const params = useParams();
+  const p = `/${locale}`;
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('idle');
 
@@ -41,11 +44,11 @@ export default function ContattiPage() {
         <div className="container contatti-hero-content">
           <div className="contatti-hero-card">
             <h1>{t('contatti.title')}</h1>
-            <a href="/" className="breadcrumb-btn">{t('contatti.breadcrumb')}</a>
+            <a href={p} className="breadcrumb-btn">{t('contatti.breadcrumb')}</a>
           </div>
         </div>
       </section>
-      <Breadcrumbs hidden items={[{ name: 'Home', href: '/' }, { name: 'Contatti' }]} />
+      <Breadcrumbs hidden items={[{ name: 'Home', href: p }, { name: 'Contatti' }]} />
 
       <section className="contatti-section">
         <div className="container">

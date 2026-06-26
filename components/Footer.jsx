@@ -5,7 +5,8 @@ import { useTranslation } from '@/context/LanguageContext'
 import '../app/styles/footer.css'
 
 export default function Footer() {
-  const { t } = useTranslation()
+  const { t, locale } = useTranslation()
+  const p = `/${locale}`
 
   return (
     <footer className="footer">
@@ -25,11 +26,11 @@ export default function Footer() {
         <div className="footer-nav">
           <h4 className="footer-nav-title">{t('footer.navigation')}</h4>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/galleria">{t('header.gallery')}</a></li>
-            <li><a href="/luoghi-di-interesse">{t('header.places')}</a></li>
-            <li><a href="/blog">{t('header.blog')}</a></li>
-            <li><a href="/contatti">{t('header.contacts')}</a></li>
+            <li><a href={p}>Home</a></li>
+            <li><a href={`${p}/galleria`}>{t('header.gallery')}</a></li>
+            <li><a href={`${p}/luoghi-di-interesse`}>{t('header.places')}</a></li>
+            <li><a href={`${p}/blog`}>{t('header.blog')}</a></li>
+            <li><a href={`${p}/contatti`}>{t('header.contacts')}</a></li>
           </ul>
         </div>
 
