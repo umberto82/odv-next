@@ -39,6 +39,8 @@
   color: #ffffff;
   cursor: pointer;
   letter-spacing: 0.07em;
+  display: inline-block;
+  text-decoration: none;
   transition: background 0.3s ease;
 }
 
@@ -51,7 +53,7 @@
 }
 
 .luoghi-hero-card .breadcrumb-btn {
-  margin-top: 16px;
+  margin-top: 30px;
 }
 
 .luoghi-hero-card h1 {

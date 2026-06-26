@@ -55,6 +55,8 @@
   color: #ffffff;
   cursor: pointer;
   letter-spacing: 0.07em;
+  display: inline-block;
+  text-decoration: none;
   transition: background 0.3s ease;
 }
 
@@ -63,7 +65,7 @@
 }
 
 .galleria-hero-card .breadcrumb-btn {
-  margin-top: 16px;
+  margin-top: 30px;
 }
 
 /* =========================
