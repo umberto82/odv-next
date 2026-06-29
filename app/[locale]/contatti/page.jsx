@@ -12,6 +12,7 @@ export default function ContattiPage() {
   const params = useParams();
   const p = `/${locale}`;
   const [form, setForm] = useState({ name: '', email: '', message: '' });
+  const [privacyAccepted, setPrivacyAccepted] = useState(false);
   const [status, setStatus] = useState('idle');
 
   const handleChange = (e) => {
@@ -20,6 +21,10 @@ export default function ContattiPage() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!privacyAccepted) {
+      setStatus('privacy-error');
+      return;
+    }
     setStatus('loading');
 
     try {
@@ -115,8 +120,22 @@ export default function ContattiPage() {
                   rows="6"
                 />
               </div>
+              <div className="contatti-privacy">
+                <label>
+                  <input
+                    type="checkbox"
+                    checked={privacyAccepted}
+                    onChange={(e) => setPrivacyAccepted(e.target.checked)}
+                  />
+                  {t('contatti.privacyConsent')}{' '}
+                  <a href={`/${locale}/privacy`} target="_blank" rel="noopener noreferrer">
+                    {t('contatti.privacyPolicy')}
+                  </a>
+                </label>
+              </div>
               {status === 'success' && <p className="contatti-feedback contatti-feedback--success">{t('contatti.success')}</p>}
               {status === 'error' && <p className="contatti-feedback contatti-feedback--error">{t('contatti.error')}</p>}
+              {status === 'privacy-error' && <p className="contatti-feedback contatti-feedback--error">{t('contatti.privacyRequired')}</p>}
               <button type="submit" className="contatti-submit" disabled={status === 'loading'}>
                 {status === 'loading' ? t('contatti.submitting') : t('contatti.submit')}
               </button>

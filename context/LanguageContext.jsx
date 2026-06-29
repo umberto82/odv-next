@@ -5,11 +5,12 @@ import { useParams, useRouter, usePathname } from 'next/navigation';
 
 const LanguageContext = createContext();
 
-const supported = ['it', 'en'];
+const supported = ['it', 'en', 'de'];
 import itMessages from '@/messages/it.json';
 const messages = {
   it: itMessages,
   en: () => import('@/messages/en.json').then(m => m.default),
+  de: () => import('@/messages/de.json').then(m => m.default),
 };
 
 function normalizeLocale(raw) {
@@ -50,7 +51,7 @@ export function LanguageProvider({ children }) {
   const setLocale = useCallback((newLocale) => {
     const norm = normalizeLocale(newLocale);
     document.cookie = `locale=${norm};path=/;max-age=${60*60*24*365}`;
-    const newPath = pathname.replace(/^\/(en|it)(\/|$)/, `/${norm}$2`);
+    const newPath = pathname.replace(/^\/(en|it|de)(\/|$)/, `/${norm}$2`);
     router.push(newPath);
   }, [pathname, router]);
 

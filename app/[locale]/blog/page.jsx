@@ -6,6 +6,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 
 import itMessages from '@/messages/it.json';
 import enMessages from '@/messages/en.json';
+import deMessages from '@/messages/de.json';
 
 export const metadata = {
   title: "Blog — Consigli di viaggio sui Colli Euganei | Oasi Dolce Vita",
@@ -19,7 +20,9 @@ export const metadata = {
 };
 
 function getMessages(locale) {
-  return locale === 'en' ? enMessages : itMessages;
+  if (locale === 'en') return enMessages;
+  if (locale === 'de') return deMessages;
+  return itMessages;
 }
 
 export default async function BlogPage({ params, searchParams }) {
@@ -74,7 +77,7 @@ export default async function BlogPage({ params, searchParams }) {
                   <p className="blog-card-excerpt">{post.excerpt}</p>
                   <div className="blog-card-footer">
                     <span className="blog-card-date">
-                      {new Date(post.date).toLocaleDateString(locale === 'en' ? 'en-US' : 'it-IT', {
+                      {new Date(post.date).toLocaleDateString(locale === 'en' ? 'en-US' : locale === 'de' ? 'de-DE' : 'it-IT', {
                         day: 'numeric',
                         month: 'long',
                         year: 'numeric',

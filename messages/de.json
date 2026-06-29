@@ -1,0 +1,225 @@
+{
+  "header": {
+    "home": "Startseite",
+    "gallery": "Galerie",
+    "places": "Sehenswürdigkeiten",
+    "blog": "Blog",
+    "contacts": "Kontakt",
+    "availability": "Verfügbarkeit",
+    "booking": "Buchen"
+  },
+  "heroHome": {
+    "title": "Oasi Dolce Vita",
+    "subtitle": "Luxusvilla mit privatem Pool und Tennisplatz in den Euganeischen Hügeln. 30 Minuten von Venedig, Padua und Verona, 2 Stunden von den Dolomiten entfernt.",
+    "cta": "Mehr erfahren"
+  },
+  "heroFeatures": {
+    "tv": "TV mit Sky",
+    "wifi": "Glasfaser-WLAN",
+    "aircon": "Klimaanlage",
+    "surveillance": "24h-Überwachung"
+  },
+  "propertyStory": {
+    "territoryLabel": "Die Region",
+    "territoryTitle": "Ein Paradies in Lozzo Atestino, in den Euganeischen Hügeln",
+    "territoryText": "Unsere Villa mit privatem Pool in Lozzo Atestino, im Herzen Venetiens in den Euganeischen Hügeln, ist der ideale Ausgangspunkt, um Weinberge, mittelalterliche Dörfer und die Naturheilquellen des Regionalparks zu erkunden. Genießen Sie Ihren Urlaub in der Ferienvilla mit Pool, Tennis und Ausflügen nach Padua und Venedig.",
+    "experienceLabel": "Erlebnis",
+    "experienceTitle": "Erleben Sie das Haus von oben",
+    "experienceText": "Eine Reise zwischen Pool, Natur und den Euganeischen Hügeln aus der Drohnenperspektive.",
+    "spacesLabel": "Die Räume",
+    "spacesTitle": "Erleben Sie das Haus, drinnen und draußen",
+    "cardPoolTitle": "Privater Pool",
+    "cardPoolText": "Tauchen Sie ein in das kristallklare Wasser unseres privaten Pools in den Euganeischen Hügeln. Der perfekte Ort zum Entspannen und Genießen der Stille der venezianischen Landschaft, nach einem Tag voller Entdeckungen in Lozzo Atestino und Umgebung. Ihre Ferienvilla in Venetien mit allem Komfort.",
+    "cardTennisTitle": "Tennisplatz",
+    "cardTennisText": "Ein Match bei Sonnenuntergang mit Blick auf die Euganeischen Hügel. Unser privater Tennisplatz steht Ihnen während Ihres gesamten Aufenthalts zur Verfügung. Ein einzigartiges Erlebnis in Ihrer Ferienvilla in Venetien.",
+    "cardOutdoorTitle": "Außenbereiche",
+    "cardOutdoorText": "Großzügige Außenbereiche zwischen Veranda und Garten mit Blick auf die Euganeischen Hügel, perfekt zum Entspannen im Schatten und Genießen der frischen Luft. Ideal für einen erholsamen Urlaub in einer Villa mit Pool in Venetien mit Familie oder Freunden.",
+    "cardIndoorTitle": "Innenbereiche",
+    "cardIndoorText": "Originelle Holzdecken, ein gemütlicher Kamin, bis ins kleinste Detail gestaltete Zimmer. Venezianische Tradition trifft auf modernen Komfort in Ihrer Villa mit Pool in den Euganeischen Hügeln, für einen Aufenthalt, bei dem nichts dem Zufall überlassen wird.",
+    "galleryLink": "Galerie ansehen →"
+  },
+  "perfectStay": {
+    "label": "Ihr Urlaub",
+    "title": "Ihr perfekter Aufenthalt in den Euganeischen Hügeln",
+    "subtitle": "Alles, was Sie für einen unvergesslichen Urlaub brauchen: privater Pool, Tennisplatz, WLAN und atemberaubender Blick auf die Euganeischen Hügel. Ihre Villa in Lozzo Atestino erwartet Sie.",
+    "pool": "Privater Pool",
+    "tennis": "Tennisplatz",
+    "pingpong": "Tischtennis",
+    "sunbeds": "Pool-Liegen",
+    "umbrellas": "Sonnenschirme",
+    "view": "Blick auf die Euganeischen Hügel",
+    "parking": "Privatparkplatz",
+    "outdoorShower": "Außendusche"
+  },
+  "galleria": {
+    "title": "Galerie",
+    "breadcrumb": "Startseite > Galerie",
+    "filters": {
+      "all": "Alle",
+      "pool": "Pool",
+      "exteriors": "Außenansichten",
+      "interiors": "Innenansichten"
+    },
+    "categories": {
+      "esterni": "Außenansichten",
+      "interni": "Innenansichten",
+      "piscina": "Pool"
+    },
+    "lightbox": {
+      "close": "Schließen",
+      "prev": "Zurück",
+      "next": "Weiter"
+    },
+    "imageTitles": {
+      "1": "Hauptvorplatz",
+      "2": "Haus Außenansicht",
+      "4": "Haus Außen",
+      "5": "Veranda",
+      "6": "Seitliche Veranda",
+      "7": "Panoramablick",
+      "8": "Tennisplatz",
+      "9": "Blick auf die Euganeischen Hügel",
+      "10": "Zimmer 1",
+      "11": "Zimmer 2",
+      "12": "Zimmer 3",
+      "13": "Master-Schlafzimmer",
+      "14": "Bad 2",
+      "15": "Erdgeschossbad",
+      "16": "Zimmer Detail 2",
+      "17": "Bad 1",
+      "18": "Zimmer 3 Detail",
+      "19": "Zimmer 4",
+      "20": "Küche",
+      "21": "Küche Detail",
+      "22": "Küchenecke",
+      "23": "Küche Gesamtansicht",
+      "24": "Eingang",
+      "25": "Wohnzimmer",
+      "26": "Wohnzimmer Ansicht 2",
+      "27": "Wohnzimmer Detail",
+      "28": "Empore",
+      "29": "Kleines Zimmer",
+      "30": "Kleines Zimmer 2",
+      "31": "Hauptpool",
+      "32": "Pool",
+      "33": "Pool mit Blick auf die Euganeischen Hügel",
+      "34": "Pool Seitenansicht",
+      "35": "Pool Detail",
+      "36": "Pool Umkleideraum",
+      "37": "Poolwasser",
+      "38": "Holzdetail",
+      "39": "Umkleideraum Küchenzeile",
+      "40": "Umkleideraum Eingang"
+    }
+  },
+  "location": {
+    "label": "Wo wir sind",
+    "title": "Anreise",
+    "addressTitle": "Adresse",
+    "mapsBtn": "In Google Maps öffnen →"
+  },
+  "reviews": {
+    "label": "Bewertungen",
+    "title": "Was unsere Gäste sagen",
+    "countries": ["Deutschland", "Italien", "Österreich", "Frankreich", "Norwegen"],
+    "texts": [
+      "Wir haben uns vom ersten Moment an wie zu Hause gefühlt. Die Lage in den Euganeischen Hügeln ist wunderschön, der Pool mit Blick auf das Tal ist einfach außergewöhnlich und die bis ins Detail gestalteten Innenräume machen den Aufenthalt unvergesslich.",
+      "Eine Villa inmitten der Euganeischen Hügel mit einem atemberaubenden Pool, einem gut ausgestatteten Tennisplatz und geschmackvoll eingerichteten Innenräumen. Umberto war ein fürsorglicher und hilfsbereiter Gastgeber. Unsere Erwartungen wurden weit übertroffen.",
+      "Das Haus und das Grundstück sind außergewöhnlich, mit großer Sorgfalt gestaltet und unglaublich gut gepflegt. Man fühlt sich vom ersten Moment an zu Hause. Umberto war ein aufmerksamer und rücksichtsvoller Gastgeber. Wir haben jeden einzelnen Tag genossen!",
+      "Haus und Garten sind überwältigend, noch schöner als auf den Fotos. Der Infinity-Pool ist wunderbar und die Euganeischen Hügel waren Liebe auf den ersten Blick. Umberto stets erreichbar und diskret. Absolut empfehlenswert!",
+      "Eine absolut unglaubliche Woche im Oasi Dolce Vita. Das Haus und die Aussicht sind atemberaubend. Umberto ist ein fantastischer Gastgeber, der immer über die Erwartungen hinausgeht. Wir haben den Tennisplatz jeden Tag genutzt!"
+    ]
+  },
+  "luoghi": {
+    "categories": {
+      "posti-da-visitare": "Sehenswürdigkeiten",
+      "citta": "Städte",
+      "cantine": "Weingüter",
+      "dove-mangiare": "Essen gehen"
+    },
+    "subcategories": {
+      "ristoranti": "Restaurants",
+      "pizzerie": "Pizzerien",
+      "gelaterie": "Eisdielen"
+    },
+    "website": "Webseite",
+    "map": "Karte"
+  },
+  "blog": {
+    "title": "Blog",
+    "breadcrumb": "Startseite > Blog",
+    "all": "Alle",
+    "recent": "Neueste",
+    "readMore": "Weiterlesen →",
+    "backToBlog": "← Zurück zum Blog",
+    "by": "von"
+  },
+  "contatti": {
+    "title": "Kontakt",
+    "breadcrumb": "Startseite > Kontakt",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "addressValue": "Lozzo Atestino (Padova)",
+    "heading": "Oasi Dolce Vita erwartet Sie",
+    "description": "Bereit, Ihren Urlaub in einer Villa mit privatem Pool in den Euganeischen Hügeln zu buchen? Kontaktieren Sie uns, um die Verfügbarkeit zu prüfen oder weitere Informationen über Oasi Dolce Vita in Lozzo Atestino zu erhalten. Wir werden uns so schnell wie möglich bei Ihnen melden.",
+    "formName": "Ihr Name",
+    "formEmail": "Ihre E-Mail",
+    "formMessage": "Ihre Nachricht",
+    "privacyConsent": "Ich stimme der Verarbeitung meiner personenbezogenen Daten gemäß der",
+    "privacyPolicy": "Datenschutzerklärung",
+    "privacyRequired": "Sie müssen die Datenschutzerklärung akzeptieren, um die Nachricht zu senden.",
+    "success": "Nachricht erfolgreich gesendet! Wir werden uns in Kürze bei Ihnen melden.",
+    "error": "Fehler beim Senden. Bitte versuchen Sie es später erneut.",
+    "submit": "Nachricht senden",
+    "submitting": "Wird gesendet..."
+  },
+  "disponibilita": {
+    "title": "Verfügbarkeit",
+    "breadcrumb": "Startseite > Verfügbarkeit",
+    "label": "Kalender",
+    "heading": "Verfügbarkeit prüfen",
+    "description": "Markierte Daten sind bereits gebucht. Alle anderen sind frei: Wählen Sie den perfekten Zeitraum für Ihren erholsamen Urlaub mit privatem Pool in den Euganeischen Hügeln."
+  },
+  "prenota": {
+    "title": "Buchen Sie Ihren Aufenthalt",
+    "breadcrumb": "Startseite > Buchung",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "guests": "Gäste",
+    "adults": "Erwachsene",
+    "children": "Kinder",
+    "name": "Vor- und Nachname",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "nightlyRate": "Preis pro Nacht",
+    "cleaningFee": "Endreinigung",
+    "total": "Gesamt",
+    "nights": "Nächte",
+    "bookNow": "Jetzt buchen",
+    "selectDates": "Daten im Kalender auswählen",
+    "unavailable": "Nicht verfügbar",
+    "loading": "Wird geladen...",
+    "submitting": "Buchung läuft...",
+    "errorDates": "Check-in und Check-out auswählen",
+    "errorForm": "Alle Pflichtfelder ausfüllen",
+    "minNights": "Mindestens {n} Nächte",
+    "goBack": "Zurück zur Startseite",
+    "confirmTitle": "Buchung bestätigt!",
+    "confirmText": "Vielen Dank {name}, Ihre Buchung wurde bestätigt. Sie erhalten eine Bestätigungs-E-Mail mit den Details Ihres Aufenthalts."
+  },
+  "footer": {
+    "tagline": "Villa mit privatem Pool und Tennisplatz in Lozzo Atestino, im Herzen der Euganeischen Hügel. Ihr Ferienhaus in Venetien zwischen Erholung, Natur und Komfort.",
+    "navigation": "Navigation",
+    "rights": "Alle Rechte vorbehalten",
+    "designedBy": "Designed by",
+    "privacy": "Datenschutzerklärung",
+    "cookie": "Cookie-Richtlinie"
+  },
+  "cookie": {
+    "text": "Wir verwenden technische Cookies, um die ordnungsgemäße Funktion der Website zu gewährleisten.",
+    "privacyLink": "Datenschutzerklärung",
+    "accept": "Akzeptieren",
+    "reject": "Ablehnen"
+  }
+}

@@ -7,6 +7,7 @@ import { useTranslation } from '@/context/LanguageContext'
 const flags = {
   it: { label: 'IT', emoji: '🇮🇹' },
   en: { label: 'EN', emoji: '🇬🇧' },
+  de: { label: 'DE', emoji: '🇩🇪' },
 }
 
 export default function Header() {
@@ -31,7 +32,7 @@ export default function Header() {
         <div className="logo">
           <a href={p}>
             <Image
-              src="/imgs/home/header/oasi-dolce-vita-logo.png"
+              src="/imgs/home/header/oasi-dolce-vita-logo-light.png"
               alt="Oasi Dolce Vita"
               width={70}
               height={70}
@@ -47,7 +48,7 @@ export default function Header() {
           <a href={`${p}/blog`}>{t('header.blog')}</a>
           <a href={`${p}/contatti`}>{t('header.contacts')}</a>
           <a href={`${p}/disponibilita`}>{t('header.availability')}</a>
-          <a href="https://oasi-dolce-vita.amenitiz.io/it/booking/room#DatesGuests-BE" target="_blank" rel="noopener noreferrer">{t('header.booking')}</a>
+          <a href={`${p}/prenota-test`}>{t('header.booking')}</a>
         </nav>
 
         {/* LANGUAGE SWITCHER */}
@@ -94,7 +95,7 @@ export default function Header() {
         <div className="mobile-menu-logo">
           <a href={p}>
             <Image
-              src="/imgs/home/header/oasi-dolce-vita-logo.png"
+              src="/imgs/home/header/oasi-dolce-vita-logo-light.png"
               alt="Oasi Dolce Vita"
               width={70}
               height={70}
@@ -120,7 +121,7 @@ export default function Header() {
         <a href={`${p}/disponibilita`} onClick={() => setIsOpen(false)}>
           {t('header.availability')}
         </a>
-        <a href="https://oasi-dolce-vita.amenitiz.io/it/booking/room#DatesGuests-BE" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>
+        <a href={`${p}/prenota-test`} onClick={() => setIsOpen(false)}>
           {t('header.booking')}
         </a>
 

@@ -166,6 +166,9 @@
     "formName": "Your name",
     "formEmail": "Your email",
     "formMessage": "Your message",
+    "privacyConsent": "I consent to the processing of my personal data as described in the",
+    "privacyPolicy": "Privacy Policy",
+    "privacyRequired": "You must accept the privacy policy to send the message.",
     "success": "Message sent successfully! We will reply shortly.",
     "error": "Error sending message. Please try again later.",
     "submit": "Send message",
@@ -178,10 +181,45 @@
     "heading": "Check availability",
     "description": "Highlighted dates are already booked. All others are free: choose the perfect period for your relaxing holiday with private pool in the Euganean Hills."
   },
+  "prenota": {
+    "title": "Book your stay",
+    "breadcrumb": "Home > Booking",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "guests": "Guests",
+    "adults": "Adults",
+    "children": "Children",
+    "name": "Full name",
+    "email": "Email",
+    "phone": "Phone",
+    "nightlyRate": "Nightly rate",
+    "cleaningFee": "Cleaning fee",
+    "total": "Total",
+    "nights": "nights",
+    "bookNow": "Book now",
+    "selectDates": "Select dates from the calendar",
+    "unavailable": "Unavailable",
+    "loading": "Loading...",
+    "submitting": "Processing booking...",
+    "errorDates": "Select check-in and check-out dates",
+    "errorForm": "Please fill in all required fields",
+    "minNights": "Minimum {n} nights",
+    "goBack": "Back to home",
+    "confirmTitle": "Booking confirmed!",
+    "confirmText": "Thank you {name}, your booking has been confirmed. You will receive a confirmation email with your stay details."
+  },
   "footer": {
     "tagline": "Villa with private pool and tennis court in Lozzo Atestino, in the heart of the Euganean Hills. Your holiday home in Veneto surrounded by relaxation, nature and comfort.",
     "navigation": "Navigation",
     "rights": "All rights reserved",
-    "designedBy": "Designed by"
+    "designedBy": "Designed by",
+    "privacy": "Privacy Policy",
+    "cookie": "Cookie Policy"
+  },
+  "cookie": {
+    "text": "We use technical cookies to ensure the proper functioning of the website.",
+    "privacyLink": "Privacy Policy",
+    "accept": "Accept",
+    "reject": "Reject"
   }
 }

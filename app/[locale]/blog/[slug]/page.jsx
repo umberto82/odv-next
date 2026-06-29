@@ -10,9 +10,12 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 
 import itMessages from '@/messages/it.json';
 import enMessages from '@/messages/en.json';
+import deMessages from '@/messages/de.json';
 
 function getMessages(locale) {
-  return locale === 'en' ? enMessages : itMessages;
+  if (locale === 'en') return enMessages;
+  if (locale === 'de') return deMessages;
+  return itMessages;
 }
 
 async function markdownToHtml(markdown) {
@@ -22,7 +25,7 @@ async function markdownToHtml(markdown) {
 
 export function generateStaticParams() {
   const slugs = getAllSlugs();
-  const locales = ['it', 'en'];
+  const locales = ['it', 'en', 'de'];
   return locales.flatMap(locale =>
     slugs.map(slug => ({ locale, slug }))
   );
@@ -94,7 +97,7 @@ export default async function BlogPostPage({ params }) {
             <div className="blog-post-header">
               <h1 className="blog-post-title">{post.title}</h1>
               <div className="blog-post-meta">
-                <span>{new Date(post.date).toLocaleDateString(locale === 'en' ? 'en-US' : 'it-IT', {
+                <span>{new Date(post.date).toLocaleDateString(locale === 'en' ? 'en-US' : locale === 'de' ? 'de-DE' : 'it-IT', {
                   day: 'numeric',
                   month: 'long',
                   year: 'numeric',

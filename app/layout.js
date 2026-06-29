@@ -1,4 +1,12 @@
 import "./globals.css";
+import { Jost } from "next/font/google";
+import { headers } from "next/headers";
+
+const jost = Jost({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-jost",
+});
 
 export const metadata = {
   metadataBase: new URL("https://oasidolcevita.com"),
@@ -28,6 +36,15 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
-  return children;
+export default async function RootLayout({ children }) {
+  const h = await headers();
+  const locale = h.get('x-next-intl-locale');
+  const validLocales = ['it', 'en', 'de'];
+  const lang = validLocales.includes(locale) ? locale : 'it';
+
+  return (
+    <html lang={lang} className={jost.variable}>
+      <body>{children}</body>
+    </html>
+  );
 }

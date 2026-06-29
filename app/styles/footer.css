@@ -173,6 +173,21 @@
   color: #ffffff;
 }
 
+.footer-legal {
+  margin: 0;
+}
+
+.footer-legal a {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.8rem;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.footer-legal a:hover {
+  color: #ffffff;
+}
+
 .footer-logo-col {
   flex: 1;
   display: flex;

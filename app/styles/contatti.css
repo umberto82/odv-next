@@ -217,6 +217,32 @@
   resize: vertical;
 }
 
+.contatti-privacy {
+  margin-bottom: 16px;
+}
+
+.contatti-privacy label {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-family: var(--font-jost), sans-serif;
+  font-size: 13px;
+  color: #666;
+  cursor: pointer;
+  line-height: 1.4;
+}
+
+.contatti-privacy input[type="checkbox"] {
+  margin-top: 2px;
+  accent-color: #5aabd8;
+  cursor: pointer;
+}
+
+.contatti-privacy a {
+  color: #5aabd8;
+  text-decoration: underline;
+}
+
 .contatti-submit {
   font-family: var(--font-jost), sans-serif;
   font-size: 15px;

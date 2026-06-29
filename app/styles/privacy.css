@@ -1,0 +1,147 @@
+/* PRIVACY PAGE */
+
+.privacy-hero {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background: #f8fafc;
+  text-align: center;
+}
+
+.privacy-hero-card h1 {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 8px;
+}
+
+.breadcrumb-btn {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 14px;
+  color: #999;
+  text-decoration: none;
+}
+
+.breadcrumb-btn:hover {
+  color: #5aabd8;
+}
+
+.privacy-content {
+  max-width: 800px;
+  margin: 40px auto 80px;
+  padding: 0 20px;
+}
+
+.privacy-date {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 32px;
+}
+
+.privacy-section {
+  margin-bottom: 28px;
+}
+
+.privacy-section h2 {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 8px;
+}
+
+.privacy-section p {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* COOKIE BANNER */
+
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: #1a1a1a;
+  padding: 16px 0;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cookie-banner-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.cookie-banner-text {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 13px;
+  color: #ccc;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.cookie-banner-link {
+  color: #5aabd8;
+  text-decoration: underline;
+}
+
+.cookie-banner-buttons {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.cookie-btn {
+  font-family: var(--font-jost), sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.cookie-btn--reject {
+  background: transparent;
+  color: #999;
+  border: 1px solid #555;
+}
+
+.cookie-btn--reject:hover {
+  background: #333;
+  color: #fff;
+}
+
+.cookie-btn--accept {
+  background: #5aabd8;
+  color: #fff;
+}
+
+.cookie-btn--accept:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 640px) {
+  .cookie-banner-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .cookie-banner-text {
+    font-size: 12px;
+  }
+  .cookie-banner-buttons {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}

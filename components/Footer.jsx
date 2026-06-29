@@ -15,7 +15,7 @@ export default function Footer() {
       <div className="footer-content container">
         <div className="footer-logo-col">
           <Image
-            src="/imgs/home/header/oasi-dolce-vita-logo.png"
+            src="/imgs/home/header/oasi-dolce-vita-logo-light.png"
             alt="Oasi Dolce Vita logo casa vacanze Colli Euganei"
             className="footer-logo-img"
             width={120}
@@ -88,6 +88,9 @@ export default function Footer() {
             >
               Effettoweb
             </a>
+          </p>
+          <p className="footer-legal">
+            <a href={`${p}/privacy`}>{t('footer.privacy')}</a>
           </p>
         </div>
       </div>

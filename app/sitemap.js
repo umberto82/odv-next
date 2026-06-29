@@ -4,7 +4,7 @@ export default async function sitemap() {
   const siteUrl =
     process.env.NEXT_PUBLIC_SITE_URL || "https://oasidolcevita.com";
 
-  const locales = ["it", "en"];
+  const locales = ["it", "en", "de"];
   const entries = [];
 
   const staticPaths = [
@@ -14,6 +14,7 @@ export default async function sitemap() {
     { path: "blog", priority: 0.9, changeFrequency: "weekly" },
     { path: "contatti", priority: 0.6, changeFrequency: "yearly" },
     { path: "disponibilita", priority: 0.7, changeFrequency: "weekly" },
+    { path: "privacy", priority: 0.3, changeFrequency: "yearly" },
   ];
 
   for (const locale of locales) {
